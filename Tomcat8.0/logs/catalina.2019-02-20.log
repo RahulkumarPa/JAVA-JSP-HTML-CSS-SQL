@@ -1,0 +1,186 @@
+20-Feb-2019 00:17:12.160 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.18
+20-Feb-2019 00:17:12.160 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 23 2015 11:56:07 UTC
+20-Feb-2019 00:17:12.160 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.18.0
+20-Feb-2019 00:17:12.160 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+20-Feb-2019 00:17:12.160 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+20-Feb-2019 00:17:12.160 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+20-Feb-2019 00:17:12.160 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jre1.8.0_192
+20-Feb-2019 00:17:12.160 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_192-b12
+20-Feb-2019 00:17:12.160 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+20-Feb-2019 00:17:12.160 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0
+20-Feb-2019 00:17:12.160 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0
+20-Feb-2019 00:17:12.160 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=F:/DC/04/WEBD-Enterprise/d2/Tomcat8.0/conf/logging.properties
+20-Feb-2019 00:17:12.160 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+20-Feb-2019 00:17:12.160 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=F:/DC/04/WEBD-Enterprise/d2/Tomcat8.0/endorsed
+20-Feb-2019 00:17:12.160 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=F:/DC/04/WEBD-Enterprise/d2/Tomcat8.0
+20-Feb-2019 00:17:12.160 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=F:/DC/04/WEBD-Enterprise/d2/Tomcat8.0
+20-Feb-2019 00:17:12.160 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=F:/DC/04/WEBD-Enterprise/d2/Tomcat8.0/temp
+20-Feb-2019 00:17:12.160 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library 1.1.32 using APR version 1.5.1.
+20-Feb-2019 00:17:12.160 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+20-Feb-2019 00:17:13.360 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1j 15 Oct 2014)
+20-Feb-2019 00:17:14.829 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-apr-8080"]
+20-Feb-2019 00:17:14.847 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8009"]
+20-Feb-2019 00:17:14.850 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 4298 ms
+20-Feb-2019 00:17:14.979 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+20-Feb-2019 00:17:14.979 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.18
+20-Feb-2019 00:17:14.993 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\demo
+20-Feb-2019 00:17:16.139 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+20-Feb-2019 00:17:16.401 INFO [localhost-startStop-1] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [187] milliseconds.
+20-Feb-2019 00:17:16.464 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\demo has finished in 1,471 ms
+20-Feb-2019 00:17:16.464 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\docs
+20-Feb-2019 00:17:16.872 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+20-Feb-2019 00:17:16.872 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\docs has finished in 408 ms
+20-Feb-2019 00:17:16.872 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\examples
+20-Feb-2019 00:17:18.985 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\examples has finished in 2,113 ms
+20-Feb-2019 00:17:18.985 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\host-manager
+20-Feb-2019 00:17:19.325 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+20-Feb-2019 00:17:19.330 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\host-manager has finished in 345 ms
+20-Feb-2019 00:17:19.330 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\manager
+20-Feb-2019 00:17:19.626 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+20-Feb-2019 00:17:19.629 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\manager has finished in 299 ms
+20-Feb-2019 00:17:19.630 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\rahulkumarp
+20-Feb-2019 00:17:19.959 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+20-Feb-2019 00:17:19.963 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\rahulkumarp has finished in 333 ms
+20-Feb-2019 00:17:19.963 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\ROOT
+20-Feb-2019 00:17:20.232 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+20-Feb-2019 00:17:20.237 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\ROOT has finished in 273 ms
+20-Feb-2019 00:17:20.248 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-apr-8080"]
+20-Feb-2019 00:17:20.261 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8009"]
+20-Feb-2019 00:17:20.262 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 5411 ms
+20-Feb-2019 00:20:30.378 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context [/rahulkumarp]
+20-Feb-2019 00:20:30.378 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/rahulkumarp] has started
+20-Feb-2019 00:20:30.691 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+20-Feb-2019 00:20:30.784 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/rahulkumarp] is completed
+20-Feb-2019 00:22:01.351 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/rahulkumarp]
+20-Feb-2019 00:22:01.366 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\webd4201.rahulkumarp
+20-Feb-2019 00:22:01.554 INFO [localhost-startStop-2] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+20-Feb-2019 00:22:01.554 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\webd4201.rahulkumarp has finished in 188 ms
+20-Feb-2019 00:39:32.532 SEVERE [http-apr-8080-exec-22] org.apache.tomcat.websocket.pojo.PojoEndpointBase.onError No error handling configured for [websocket.echo.EchoAnnotation] and the following error occurred
+ java.io.IOException: java.util.concurrent.ExecutionException: java.io.EOFException: The client aborted the connection.
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.startMessageBlock(WsRemoteEndpointImplBase.java:282)
+	at org.apache.tomcat.websocket.WsSession.sendCloseMessage(WsSession.java:563)
+	at org.apache.tomcat.websocket.WsSession.onClose(WsSession.java:503)
+	at org.apache.tomcat.websocket.WsFrameBase.processDataControl(WsFrameBase.java:342)
+	at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:284)
+	at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:130)
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:60)
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler$WsReadListener.onDataAvailable(WsHttpUpgradeHandler.java:203)
+	at org.apache.coyote.http11.upgrade.AbstractServletInputStream.onDataAvailable(AbstractServletInputStream.java:194)
+	at org.apache.coyote.http11.upgrade.AbstractProcessor.upgradeDispatch(AbstractProcessor.java:96)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:654)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.util.concurrent.ExecutionException: java.io.EOFException: The client aborted the connection.
+	at org.apache.tomcat.websocket.FutureToSendHandler.get(FutureToSendHandler.java:102)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.startMessageBlock(WsRemoteEndpointImplBase.java:275)
+	... 17 more
+Caused by: java.io.EOFException: The client aborted the connection.
+	at org.apache.coyote.http11.upgrade.AprServletOutputStream.doWriteInternal(AprServletOutputStream.java:140)
+	at org.apache.coyote.http11.upgrade.AprServletOutputStream.doWrite(AprServletOutputStream.java:68)
+	at org.apache.coyote.http11.upgrade.AbstractServletOutputStream.writeInternal(AbstractServletOutputStream.java:162)
+	at org.apache.coyote.http11.upgrade.AbstractServletOutputStream.write(AbstractServletOutputStream.java:129)
+	at org.apache.tomcat.websocket.server.WsRemoteEndpointImplServer.onWritePossible(WsRemoteEndpointImplServer.java:99)
+	at org.apache.tomcat.websocket.server.WsRemoteEndpointImplServer.doWrite(WsRemoteEndpointImplServer.java:81)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:450)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.startMessage(WsRemoteEndpointImplBase.java:338)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.startMessageBlock(WsRemoteEndpointImplBase.java:270)
+	... 17 more
+
+20-Feb-2019 00:39:53.793 SEVERE [http-apr-8080-exec-22] websocket.chat.ChatAnnotation.onError Chat Error: java.io.IOException: java.util.concurrent.ExecutionException: java.io.EOFException: The client aborted the connection.
+ java.io.IOException: java.util.concurrent.ExecutionException: java.io.EOFException: The client aborted the connection.
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.startMessageBlock(WsRemoteEndpointImplBase.java:282)
+	at org.apache.tomcat.websocket.WsSession.sendCloseMessage(WsSession.java:563)
+	at org.apache.tomcat.websocket.WsSession.onClose(WsSession.java:503)
+	at org.apache.tomcat.websocket.WsFrameBase.processDataControl(WsFrameBase.java:342)
+	at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:284)
+	at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:130)
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:60)
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler$WsReadListener.onDataAvailable(WsHttpUpgradeHandler.java:203)
+	at org.apache.coyote.http11.upgrade.AbstractServletInputStream.onDataAvailable(AbstractServletInputStream.java:194)
+	at org.apache.coyote.http11.upgrade.AbstractProcessor.upgradeDispatch(AbstractProcessor.java:96)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:654)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.util.concurrent.ExecutionException: java.io.EOFException: The client aborted the connection.
+	at org.apache.tomcat.websocket.FutureToSendHandler.get(FutureToSendHandler.java:102)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.startMessageBlock(WsRemoteEndpointImplBase.java:275)
+	... 17 more
+Caused by: java.io.EOFException: The client aborted the connection.
+	at org.apache.coyote.http11.upgrade.AprServletOutputStream.doWriteInternal(AprServletOutputStream.java:140)
+	at org.apache.coyote.http11.upgrade.AprServletOutputStream.doWrite(AprServletOutputStream.java:68)
+	at org.apache.coyote.http11.upgrade.AbstractServletOutputStream.writeInternal(AbstractServletOutputStream.java:162)
+	at org.apache.coyote.http11.upgrade.AbstractServletOutputStream.write(AbstractServletOutputStream.java:129)
+	at org.apache.tomcat.websocket.server.WsRemoteEndpointImplServer.onWritePossible(WsRemoteEndpointImplServer.java:99)
+	at org.apache.tomcat.websocket.server.WsRemoteEndpointImplServer.doWrite(WsRemoteEndpointImplServer.java:81)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:450)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.startMessage(WsRemoteEndpointImplBase.java:338)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.startMessageBlock(WsRemoteEndpointImplBase.java:270)
+	... 17 more
+
+20-Feb-2019 13:15:00.688 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.18
+20-Feb-2019 13:15:00.703 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 23 2015 11:56:07 UTC
+20-Feb-2019 13:15:00.703 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.18.0
+20-Feb-2019 13:15:00.703 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+20-Feb-2019 13:15:00.703 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+20-Feb-2019 13:15:00.703 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+20-Feb-2019 13:15:00.703 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jre1.8.0_192
+20-Feb-2019 13:15:00.703 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_192-b12
+20-Feb-2019 13:15:00.703 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+20-Feb-2019 13:15:00.703 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0
+20-Feb-2019 13:15:00.703 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0
+20-Feb-2019 13:15:00.703 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=F:/DC/04/WEBD-Enterprise/d2/Tomcat8.0/conf/logging.properties
+20-Feb-2019 13:15:00.703 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+20-Feb-2019 13:15:00.703 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=F:/DC/04/WEBD-Enterprise/d2/Tomcat8.0/endorsed
+20-Feb-2019 13:15:00.703 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=F:/DC/04/WEBD-Enterprise/d2/Tomcat8.0
+20-Feb-2019 13:15:00.703 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=F:/DC/04/WEBD-Enterprise/d2/Tomcat8.0
+20-Feb-2019 13:15:00.703 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=F:/DC/04/WEBD-Enterprise/d2/Tomcat8.0/temp
+20-Feb-2019 13:15:00.703 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library 1.1.32 using APR version 1.5.1.
+20-Feb-2019 13:15:00.703 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+20-Feb-2019 13:15:01.867 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1j 15 Oct 2014)
+20-Feb-2019 13:15:05.502 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-apr-8080"]
+20-Feb-2019 13:15:05.518 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8009"]
+20-Feb-2019 13:15:05.518 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 6622 ms
+20-Feb-2019 13:15:05.643 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+20-Feb-2019 13:15:05.643 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.18
+20-Feb-2019 13:15:05.689 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\demo
+20-Feb-2019 13:15:07.205 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+20-Feb-2019 13:15:07.605 INFO [localhost-startStop-1] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [300] milliseconds.
+20-Feb-2019 13:15:07.645 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\demo has finished in 1,956 ms
+20-Feb-2019 13:15:07.645 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\docs
+20-Feb-2019 13:15:07.921 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+20-Feb-2019 13:15:07.925 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\docs has finished in 280 ms
+20-Feb-2019 13:15:07.925 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\examples
+20-Feb-2019 13:15:09.906 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\examples has finished in 1,981 ms
+20-Feb-2019 13:15:09.906 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\host-manager
+20-Feb-2019 13:15:10.198 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+20-Feb-2019 13:15:10.206 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\host-manager has finished in 300 ms
+20-Feb-2019 13:15:10.206 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\manager
+20-Feb-2019 13:15:10.473 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+20-Feb-2019 13:15:10.473 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\manager has finished in 267 ms
+20-Feb-2019 13:15:10.477 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\ROOT
+20-Feb-2019 13:15:10.693 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+20-Feb-2019 13:15:10.697 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\ROOT has finished in 220 ms
+20-Feb-2019 13:15:10.697 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\webd4201.rahulkumarp
+20-Feb-2019 13:15:10.929 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+20-Feb-2019 13:15:10.937 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\webd4201.rahulkumarp has finished in 236 ms
+20-Feb-2019 13:15:10.945 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-apr-8080"]
+20-Feb-2019 13:15:10.957 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8009"]
+20-Feb-2019 13:15:10.957 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 5430 ms
+20-Feb-2019 16:45:19.859 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context [/webd4201.rahulkumarp]
+20-Feb-2019 16:45:19.875 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/webd4201.rahulkumarp] has started
+20-Feb-2019 16:45:20.328 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+20-Feb-2019 16:45:20.484 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/webd4201.rahulkumarp] is completed
+20-Feb-2019 16:50:00.680 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context [/webd4201.rahulkumarp]
+20-Feb-2019 16:50:00.680 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/webd4201.rahulkumarp] has started
+20-Feb-2019 16:50:00.852 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+20-Feb-2019 16:50:00.852 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/webd4201.rahulkumarp] is completed

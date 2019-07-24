@@ -1,0 +1,474 @@
+24-Mar-2019 19:00:46.861 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.18
+24-Mar-2019 19:00:46.892 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 23 2015 11:56:07 UTC
+24-Mar-2019 19:00:46.892 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.18.0
+24-Mar-2019 19:00:46.892 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+24-Mar-2019 19:00:46.892 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+24-Mar-2019 19:00:46.892 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+24-Mar-2019 19:00:46.892 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jre1.8.0_192
+24-Mar-2019 19:00:46.892 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_192-b12
+24-Mar-2019 19:00:46.892 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+24-Mar-2019 19:00:46.892 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0
+24-Mar-2019 19:00:46.892 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0
+24-Mar-2019 19:00:46.892 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=F:/DC/04/WEBD-Enterprise/d2/Tomcat8.0/conf/logging.properties
+24-Mar-2019 19:00:46.892 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Mar-2019 19:00:46.892 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=F:/DC/04/WEBD-Enterprise/d2/Tomcat8.0/endorsed
+24-Mar-2019 19:00:46.892 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=F:/DC/04/WEBD-Enterprise/d2/Tomcat8.0
+24-Mar-2019 19:00:46.892 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=F:/DC/04/WEBD-Enterprise/d2/Tomcat8.0
+24-Mar-2019 19:00:46.892 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=F:/DC/04/WEBD-Enterprise/d2/Tomcat8.0/temp
+24-Mar-2019 19:00:46.892 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library 1.1.32 using APR version 1.5.1.
+24-Mar-2019 19:00:46.892 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+24-Mar-2019 19:00:47.798 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1j 15 Oct 2014)
+24-Mar-2019 19:00:50.111 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-apr-8080"]
+24-Mar-2019 19:00:50.126 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8009"]
+24-Mar-2019 19:00:50.126 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 3884 ms
+24-Mar-2019 19:00:50.173 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+24-Mar-2019 19:00:50.173 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.18
+24-Mar-2019 19:00:50.204 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\demo
+24-Mar-2019 19:00:51.017 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2019 19:00:51.173 INFO [localhost-startStop-1] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [125] milliseconds.
+24-Mar-2019 19:00:51.204 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\demo has finished in 1,000 ms
+24-Mar-2019 19:00:51.204 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\demo - Copy
+24-Mar-2019 19:00:51.579 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2019 19:00:51.579 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\demo - Copy has finished in 375 ms
+24-Mar-2019 19:00:51.579 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\docs
+24-Mar-2019 19:00:51.767 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2019 19:00:51.767 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\docs has finished in 188 ms
+24-Mar-2019 19:00:51.767 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\examples
+24-Mar-2019 19:00:53.524 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\examples has finished in 1,757 ms
+24-Mar-2019 19:00:53.524 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\host-manager
+24-Mar-2019 19:00:53.788 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2019 19:00:53.796 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\host-manager has finished in 268 ms
+24-Mar-2019 19:00:53.796 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\manager
+24-Mar-2019 19:00:54.011 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2019 19:00:54.015 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\manager has finished in 219 ms
+24-Mar-2019 19:00:54.015 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\patelr
+24-Mar-2019 19:00:54.395 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2019 19:00:54.403 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\patelr has finished in 388 ms
+24-Mar-2019 19:00:54.403 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\ROOT
+24-Mar-2019 19:00:54.591 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2019 19:00:54.591 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\ROOT has finished in 188 ms
+24-Mar-2019 19:00:54.615 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-apr-8080"]
+24-Mar-2019 19:00:54.627 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8009"]
+24-Mar-2019 19:00:54.627 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 4494 ms
+24-Mar-2019 19:20:15.440 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context [/patelr]
+24-Mar-2019 19:20:15.440 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/patelr] has started
+24-Mar-2019 19:20:15.534 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.tomcat.util.digester.Digester.fatalError Parse Fatal Error at line 64 column 3: The element type "servlet" must be terminated by the matching end-tag "</servlet>".
+ org.xml.sax.SAXParseException; systemId: file:/F:/DC/04/WEBD-Enterprise/d2/Tomcat8.0/webapps/patelr/WEB-INF/web.xml; lineNumber: 64; columnNumber: 3; The element type "servlet" must be terminated by the matching end-tag "</servlet>".
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1457)
+	at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:120)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1107)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:771)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:305)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5053)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3746)
+	at org.apache.catalina.startup.HostConfig.reload(HostConfig.java:1304)
+	at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1287)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1471)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:280)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1142)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1378)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1382)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1350)
+	at java.lang.Thread.run(Unknown Source)
+
+24-Mar-2019 19:20:15.550 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Parse error in application web.xml file at file:/F:/DC/04/WEBD-Enterprise/d2/Tomcat8.0/webapps/patelr/WEB-INF/web.xml
+ org.xml.sax.SAXParseException; systemId: file:/F:/DC/04/WEBD-Enterprise/d2/Tomcat8.0/webapps/patelr/WEB-INF/web.xml; lineNumber: 64; columnNumber: 3; The element type "servlet" must be terminated by the matching end-tag "</servlet>".
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1457)
+	at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:120)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1107)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:771)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:305)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5053)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3746)
+	at org.apache.catalina.startup.HostConfig.reload(HostConfig.java:1304)
+	at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1287)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1471)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:280)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1142)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1378)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1382)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1350)
+	at java.lang.Thread.run(Unknown Source)
+
+24-Mar-2019 19:20:15.550 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Occurred at line 64 column 3
+24-Mar-2019 19:20:15.550 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.ContextConfig.configureStart Marking this application unavailable due to previous error(s)
+24-Mar-2019 19:20:15.550 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.startInternal Error getConfigured
+24-Mar-2019 19:20:15.644 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.startInternal Context [/patelr] startup failed due to previous errors
+24-Mar-2019 19:20:15.644 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/patelr] is completed
+24-Mar-2019 19:20:25.651 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context [/patelr]
+24-Mar-2019 19:20:25.667 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.tomcat.util.digester.Digester.fatalError Parse Fatal Error at line 64 column 3: The element type "servlet" must be terminated by the matching end-tag "</servlet>".
+ org.xml.sax.SAXParseException; systemId: file:/F:/DC/04/WEBD-Enterprise/d2/Tomcat8.0/webapps/patelr/WEB-INF/web.xml; lineNumber: 64; columnNumber: 3; The element type "servlet" must be terminated by the matching end-tag "</servlet>".
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1457)
+	at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:120)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1107)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:771)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:305)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5053)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.startup.HostConfig.reload(HostConfig.java:1309)
+	at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1287)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1471)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:280)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1142)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1378)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1382)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1350)
+	at java.lang.Thread.run(Unknown Source)
+
+24-Mar-2019 19:20:25.667 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Parse error in application web.xml file at file:/F:/DC/04/WEBD-Enterprise/d2/Tomcat8.0/webapps/patelr/WEB-INF/web.xml
+ org.xml.sax.SAXParseException; systemId: file:/F:/DC/04/WEBD-Enterprise/d2/Tomcat8.0/webapps/patelr/WEB-INF/web.xml; lineNumber: 64; columnNumber: 3; The element type "servlet" must be terminated by the matching end-tag "</servlet>".
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1457)
+	at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:120)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1107)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:771)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:305)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5053)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.startup.HostConfig.reload(HostConfig.java:1309)
+	at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1287)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1471)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:280)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1142)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1378)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1382)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1350)
+	at java.lang.Thread.run(Unknown Source)
+
+24-Mar-2019 19:20:25.667 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Occurred at line 64 column 3
+24-Mar-2019 19:20:25.667 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.ContextConfig.configureStart Marking this application unavailable due to previous error(s)
+24-Mar-2019 19:20:25.667 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.startInternal Error getConfigured
+24-Mar-2019 19:20:25.667 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.startInternal Context [/patelr] startup failed due to previous errors
+24-Mar-2019 19:30:27.282 INFO [http-apr-8080-exec-14] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/demo - Copy] has started
+24-Mar-2019 19:30:27.470 INFO [http-apr-8080-exec-14] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2019 19:30:27.474 INFO [http-apr-8080-exec-14] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/demo - Copy] is completed
+24-Mar-2019 19:31:34.276 INFO [http-apr-8080-exec-27] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/demo - Copy] has started
+24-Mar-2019 19:31:34.456 INFO [http-apr-8080-exec-27] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2019 19:31:34.468 INFO [http-apr-8080-exec-27] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/demo - Copy] is completed
+24-Mar-2019 19:31:36.078 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context [/patelr]
+24-Mar-2019 19:31:36.373 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2019 19:34:46.505 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context [/patelr]
+24-Mar-2019 19:34:46.505 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/patelr] has started
+24-Mar-2019 19:34:46.661 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2019 19:34:46.677 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/patelr] is completed
+24-Mar-2019 19:35:17.761 INFO [http-apr-8080-exec-29] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/patelr] has started
+24-Mar-2019 19:35:17.977 INFO [http-apr-8080-exec-29] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2019 19:35:17.989 INFO [http-apr-8080-exec-29] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/patelr] is completed
+24-Mar-2019 19:45:37.179 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context [/patelr]
+24-Mar-2019 19:45:37.179 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/patelr] has started
+24-Mar-2019 19:45:37.320 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2019 19:45:37.320 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/patelr] is completed
+24-Mar-2019 19:46:37.349 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context [/patelr]
+24-Mar-2019 19:46:37.349 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/patelr] has started
+24-Mar-2019 19:46:37.458 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2019 19:46:37.474 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/patelr] is completed
+24-Mar-2019 19:46:47.477 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context [/patelr]
+24-Mar-2019 19:46:47.477 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/patelr] has started
+24-Mar-2019 19:46:47.481 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.tomcat.util.digester.Digester.endElement End event threw exception
+ java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor19.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.tomcat.util.IntrospectionUtils.callMethodN(IntrospectionUtils.java:379)
+	at org.apache.tomcat.util.descriptor.web.CallMethodMultiRule.end(WebRuleSet.java:1034)
+	at org.apache.tomcat.util.digester.Digester.endElement(Digester.java:959)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.endElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.endNamespaceScope(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleEndElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.endElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1457)
+	at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:120)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1107)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:771)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:305)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5053)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3746)
+	at org.apache.catalina.startup.HostConfig.reload(HostConfig.java:1304)
+	at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1287)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1471)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:280)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1142)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1378)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1382)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1350)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalArgumentException: The servlets named [LogoutServlet] and [LogoutServlet] are both mapped to the url-pattern [/Logout] which is not permitted
+	at org.apache.tomcat.util.descriptor.web.WebXml.addServletMapping(WebXml.java:308)
+	... 40 more
+
+24-Mar-2019 19:46:47.481 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Parse error in application web.xml file at file:/F:/DC/04/WEBD-Enterprise/d2/Tomcat8.0/webapps/patelr/WEB-INF/web.xml
+ org.xml.sax.SAXParseException; systemId: file:/F:/DC/04/WEBD-Enterprise/d2/Tomcat8.0/webapps/patelr/WEB-INF/web.xml; lineNumber: 56; columnNumber: 23; Error at (56, 23) : The servlets named [LogoutServlet] and [LogoutServlet] are both mapped to the url-pattern [/Logout] which is not permitted
+	at org.apache.tomcat.util.digester.Digester.createSAXException(Digester.java:1914)
+	at org.apache.tomcat.util.digester.Digester.createSAXException(Digester.java:1946)
+	at org.apache.tomcat.util.digester.Digester.endElement(Digester.java:962)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.endElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.endNamespaceScope(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleEndElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.endElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1457)
+	at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:120)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1107)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:771)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:305)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5053)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3746)
+	at org.apache.catalina.startup.HostConfig.reload(HostConfig.java:1304)
+	at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1287)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1471)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:280)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1142)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1378)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1382)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1350)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalArgumentException: The servlets named [LogoutServlet] and [LogoutServlet] are both mapped to the url-pattern [/Logout] which is not permitted
+	at org.apache.tomcat.util.descriptor.web.WebXml.addServletMapping(WebXml.java:308)
+	at sun.reflect.GeneratedMethodAccessor19.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.tomcat.util.IntrospectionUtils.callMethodN(IntrospectionUtils.java:379)
+	at org.apache.tomcat.util.descriptor.web.CallMethodMultiRule.end(WebRuleSet.java:1034)
+	at org.apache.tomcat.util.digester.Digester.endElement(Digester.java:959)
+	... 34 more
+
+24-Mar-2019 19:46:47.481 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Occurred at line 56 column 23
+24-Mar-2019 19:46:47.481 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.ContextConfig.configureStart Marking this application unavailable due to previous error(s)
+24-Mar-2019 19:46:47.481 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.startInternal Error getConfigured
+24-Mar-2019 19:46:47.481 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.startInternal Context [/patelr] startup failed due to previous errors
+24-Mar-2019 19:46:47.497 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/patelr] is completed
+24-Mar-2019 19:46:57.503 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context [/patelr]
+24-Mar-2019 19:46:57.519 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.tomcat.util.digester.Digester.endElement End event threw exception
+ java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor19.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.tomcat.util.IntrospectionUtils.callMethodN(IntrospectionUtils.java:379)
+	at org.apache.tomcat.util.descriptor.web.CallMethodMultiRule.end(WebRuleSet.java:1034)
+	at org.apache.tomcat.util.digester.Digester.endElement(Digester.java:959)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.endElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.endNamespaceScope(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleEndElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.endElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1457)
+	at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:120)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1107)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:771)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:305)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5053)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.startup.HostConfig.reload(HostConfig.java:1309)
+	at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1287)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1471)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:280)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1142)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1378)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1382)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1350)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalArgumentException: The servlets named [LogoutServlet] and [RegisterSerlet] are both mapped to the url-pattern [/Logout] which is not permitted
+	at org.apache.tomcat.util.descriptor.web.WebXml.addServletMapping(WebXml.java:308)
+	... 39 more
+
+24-Mar-2019 19:46:57.519 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Parse error in application web.xml file at file:/F:/DC/04/WEBD-Enterprise/d2/Tomcat8.0/webapps/patelr/WEB-INF/web.xml
+ org.xml.sax.SAXParseException; systemId: file:/F:/DC/04/WEBD-Enterprise/d2/Tomcat8.0/webapps/patelr/WEB-INF/web.xml; lineNumber: 56; columnNumber: 23; Error at (56, 23) : The servlets named [LogoutServlet] and [RegisterSerlet] are both mapped to the url-pattern [/Logout] which is not permitted
+	at org.apache.tomcat.util.digester.Digester.createSAXException(Digester.java:1914)
+	at org.apache.tomcat.util.digester.Digester.createSAXException(Digester.java:1946)
+	at org.apache.tomcat.util.digester.Digester.endElement(Digester.java:962)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.endElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.endNamespaceScope(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleEndElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.endElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1457)
+	at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:120)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1107)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:771)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:305)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5053)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.startup.HostConfig.reload(HostConfig.java:1309)
+	at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1287)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1471)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:280)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1142)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1378)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1382)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1350)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalArgumentException: The servlets named [LogoutServlet] and [RegisterSerlet] are both mapped to the url-pattern [/Logout] which is not permitted
+	at org.apache.tomcat.util.descriptor.web.WebXml.addServletMapping(WebXml.java:308)
+	at sun.reflect.GeneratedMethodAccessor19.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.tomcat.util.IntrospectionUtils.callMethodN(IntrospectionUtils.java:379)
+	at org.apache.tomcat.util.descriptor.web.CallMethodMultiRule.end(WebRuleSet.java:1034)
+	at org.apache.tomcat.util.digester.Digester.endElement(Digester.java:959)
+	... 33 more
+
+24-Mar-2019 19:46:57.519 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Occurred at line 56 column 23
+24-Mar-2019 19:46:57.519 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.ContextConfig.configureStart Marking this application unavailable due to previous error(s)
+24-Mar-2019 19:46:57.519 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.startInternal Error getConfigured
+24-Mar-2019 19:46:57.519 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.startInternal Context [/patelr] startup failed due to previous errors
+24-Mar-2019 19:47:07.523 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context [/patelr]
+24-Mar-2019 19:47:07.710 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2019 19:47:57.745 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context [/patelr]
+24-Mar-2019 19:47:57.745 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/patelr] has started
+24-Mar-2019 19:47:57.885 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2019 19:47:57.885 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/patelr] is completed
+24-Mar-2019 20:09:07.005 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context [/patelr]
+24-Mar-2019 20:09:07.005 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/patelr] has started
+24-Mar-2019 20:09:07.149 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2019 20:09:07.153 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/patelr] is completed
+24-Mar-2019 20:09:22.921 INFO [http-apr-8080-exec-54] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/patelr] has started
+24-Mar-2019 20:09:23.069 INFO [http-apr-8080-exec-54] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2019 20:09:23.069 INFO [http-apr-8080-exec-54] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/patelr] is completed
+24-Mar-2019 20:10:27.205 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context [/patelr]
+24-Mar-2019 20:10:27.205 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/patelr] has started
+24-Mar-2019 20:10:27.330 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2019 20:10:27.330 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/patelr] is completed
+24-Mar-2019 20:11:17.376 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context [/patelr]
+24-Mar-2019 20:11:17.376 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/patelr] has started
+24-Mar-2019 20:11:17.501 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2019 20:11:17.517 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/patelr] is completed
+24-Mar-2019 20:11:31.171 INFO [http-apr-8080-exec-68] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/patelr] has started
+24-Mar-2019 20:11:31.331 INFO [http-apr-8080-exec-68] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2019 20:11:31.335 INFO [http-apr-8080-exec-68] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/patelr] is completed
+24-Mar-2019 20:30:16.093 INFO [http-apr-8080-exec-78] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/patelr] has started
+24-Mar-2019 20:30:16.257 INFO [http-apr-8080-exec-78] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2019 20:30:16.257 INFO [http-apr-8080-exec-78] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/patelr] is completed
+24-Mar-2019 20:30:19.521 INFO [http-apr-8080-exec-74] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/patelr] has started
+24-Mar-2019 20:30:19.689 INFO [http-apr-8080-exec-74] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2019 20:30:19.689 INFO [http-apr-8080-exec-74] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/patelr] is completed
+24-Mar-2019 20:33:58.382 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context [/patelr]
+24-Mar-2019 20:33:58.382 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/patelr] has started
+24-Mar-2019 20:33:58.522 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2019 20:33:58.530 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/patelr] is completed
+24-Mar-2019 20:34:00.880 INFO [http-apr-8080-exec-81] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/patelr] has started
+24-Mar-2019 20:34:01.032 INFO [http-apr-8080-exec-81] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+24-Mar-2019 20:34:01.036 INFO [http-apr-8080-exec-81] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/patelr] is completed

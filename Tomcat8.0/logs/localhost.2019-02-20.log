@@ -1,0 +1,3357 @@
+20-Feb-2019 00:17:18.963 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+20-Feb-2019 00:17:18.963 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+20-Feb-2019 00:38:27.338 INFO [http-apr-8080-exec-20] org.apache.catalina.core.ApplicationContext.log SessionListener: sessionCreated('FE08F2EE62E21AC81DD5AEF3D8128D2D')
+20-Feb-2019 00:38:39.648 INFO [http-apr-8080-exec-21] org.apache.catalina.core.ApplicationContext.log SessionListener: attributeAdded('FE08F2EE62E21AC81DD5AEF3D8128D2D', 'foo', 'bar')
+20-Feb-2019 00:38:41.804 INFO [http-apr-8080-exec-23] org.apache.catalina.core.ApplicationContext.log SessionListener: attributeReplaced('FE08F2EE62E21AC81DD5AEF3D8128D2D', 'foo', 'bar')
+20-Feb-2019 01:10:23.204 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.ApplicationContext.log SessionListener: sessionDestroyed('FE08F2EE62E21AC81DD5AEF3D8128D2D')
+20-Feb-2019 01:10:23.204 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.ApplicationContext.log SessionListener: attributeRemoved('FE08F2EE62E21AC81DD5AEF3D8128D2D', 'foo', 'bar')
+20-Feb-2019 10:26:51.294 SEVERE [http-apr-8080-exec-23] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/webd4201.rahulkumarp] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 4 in the jsp file: /header.jsp
+title cannot be resolved to a variable
+1: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+2: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+3: <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+4: 	<title><%= title %></title>
+5: 	<link href="./css/durham.css" rel="stylesheet" type="text/css" />
+6: </head>
+7: <body>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 4 in the jsp file: /header.jsp
+title cannot be resolved to a variable
+1: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+2: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+3: <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+4: 	<title><%= title %></title>
+5: 	<link href="./css/durham.css" rel="stylesheet" type="text/css" />
+6: </head>
+7: <body>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:570)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:356)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+20-Feb-2019 10:27:48.484 SEVERE [http-apr-8080-exec-26] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/webd4201.rahulkumarp] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 4 in the jsp file: /header.jsp
+title cannot be resolved to a variable
+1: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+2: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+3: <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+4: 	<title><%= title %></title>
+5: 	<link href="./css/durham.css" rel="stylesheet" type="text/css" />
+6: </head>
+7: <body>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 4 in the jsp file: /header.jsp
+title cannot be resolved to a variable
+1: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+2: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+3: <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+4: 	<title><%= title %></title>
+5: 	<link href="./css/durham.css" rel="stylesheet" type="text/css" />
+6: </head>
+7: <body>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:570)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:356)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+20-Feb-2019 10:27:53.967 SEVERE [http-apr-8080-exec-25] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/webd4201.rahulkumarp] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 4 in the jsp file: /header.jsp
+title cannot be resolved to a variable
+1: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+2: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+3: <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+4: 	<title><%= title %></title>
+5: 	<link href="./css/durham.css" rel="stylesheet" type="text/css" />
+6: </head>
+7: <body>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 4 in the jsp file: /header.jsp
+title cannot be resolved to a variable
+1: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+2: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+3: <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+4: 	<title><%= title %></title>
+5: 	<link href="./css/durham.css" rel="stylesheet" type="text/css" />
+6: </head>
+7: <body>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:570)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:356)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+20-Feb-2019 10:30:15.311 SEVERE [http-apr-8080-exec-19] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/webd4201.rahulkumarp] threw exception [/header.jsp (line: 4, column: 2) Unterminated &lt;%@ page tag] with root cause
+ org.apache.jasper.JasperException: /header.jsp (line: 4, column: 2) Unterminated &lt;%@ page tag
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:41)
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:275)
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:91)
+	at org.apache.jasper.compiler.Parser.parseDirective(Parser.java:497)
+	at org.apache.jasper.compiler.Parser.parseFileDirectives(Parser.java:1782)
+	at org.apache.jasper.compiler.Parser.parse(Parser.java:136)
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:227)
+	at org.apache.jasper.compiler.ParserController.parseDirectives(ParserController.java:117)
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:194)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:570)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:356)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+20-Feb-2019 10:31:45.706 SEVERE [http-apr-8080-exec-23] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/webd4201.rahulkumarp] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 5 in the jsp file: /header.jsp
+title cannot be resolved to a variable
+2: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+3: <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+4: 
+5: 	<title><%= title %></title>
+6: 	<link href="./css/durham.css" rel="stylesheet" type="text/css" />
+7: </head>
+8: <body>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 5 in the jsp file: /header.jsp
+title cannot be resolved to a variable
+2: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+3: <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+4: 
+5: 	<title><%= title %></title>
+6: 	<link href="./css/durham.css" rel="stylesheet" type="text/css" />
+7: </head>
+8: <body>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:570)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:356)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+20-Feb-2019 10:40:54.001 SEVERE [http-apr-8080-exec-22] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/webd4201.rahulkumarp] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+title cannot be resolved to a variable
+1: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+2: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+3: <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+4: 	<title><% title = inde %></title>
+5: 	<%@ page import = "header.jsp.*" %>
+6: </head>
+7: <body>
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+1: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+2: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+3: <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+4: 	<title><% title = inde %></title>
+5: 	<%@ page import = "header.jsp.*" %>
+6: </head>
+7: <body>
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+Syntax error, insert ";" to complete Statement
+1: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+2: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+3: <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+4: 	<title><% title = inde %></title>
+5: 	<%@ page import = "header.jsp.*" %>
+6: </head>
+7: <body>
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+inde cannot be resolved to a variable
+1: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+2: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+3: <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+4: 	<title><% title = inde %></title>
+5: 	<%@ page import = "header.jsp.*" %>
+6: </head>
+7: <body>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+title cannot be resolved to a variable
+1: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+2: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+3: <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+4: 	<title><% title = inde %></title>
+5: 	<%@ page import = "header.jsp.*" %>
+6: </head>
+7: <body>
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+1: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+2: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+3: <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+4: 	<title><% title = inde %></title>
+5: 	<%@ page import = "header.jsp.*" %>
+6: </head>
+7: <body>
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+Syntax error, insert ";" to complete Statement
+1: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+2: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+3: <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+4: 	<title><% title = inde %></title>
+5: 	<%@ page import = "header.jsp.*" %>
+6: </head>
+7: <body>
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+inde cannot be resolved to a variable
+1: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+2: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+3: <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+4: 	<title><% title = inde %></title>
+5: 	<%@ page import = "header.jsp.*" %>
+6: </head>
+7: <body>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:570)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:356)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+20-Feb-2019 10:50:50.945 SEVERE [http-apr-8080-exec-19] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/webd4201.rahulkumarp] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 3 in the jsp file: /index.jsp
+string cannot be resolved to a type
+1: <html>
+2:    <head>
+3:    	<% string title = "Hello World">
+4:    		<@ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+Syntax error on tokens, ( expected instead
+1: <html>
+2:    <head>
+3:    	<% string title = "Hello World">
+4:    		<@ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+7:    <body>
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+file cannot be resolved to a variable
+1: <html>
+2:    <head>
+3:    	<% string title = "Hello World">
+4:    		<@ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+7:    <body>
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+Syntax error, insert ")" to complete Expression
+1: <html>
+2:    <head>
+3:    	<% string title = "Hello World">
+4:    		<@ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+7:    <body>
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+1: <html>
+2:    <head>
+3:    	<% string title = "Hello World">
+4:    		<@ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+7:    <body>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 3 in the jsp file: /index.jsp
+string cannot be resolved to a type
+1: <html>
+2:    <head>
+3:    	<% string title = "Hello World">
+4:    		<@ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+Syntax error on tokens, ( expected instead
+1: <html>
+2:    <head>
+3:    	<% string title = "Hello World">
+4:    		<@ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+7:    <body>
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+file cannot be resolved to a variable
+1: <html>
+2:    <head>
+3:    	<% string title = "Hello World">
+4:    		<@ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+7:    <body>
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+Syntax error, insert ")" to complete Expression
+1: <html>
+2:    <head>
+3:    	<% string title = "Hello World">
+4:    		<@ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+7:    <body>
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+1: <html>
+2:    <head>
+3:    	<% string title = "Hello World">
+4:    		<@ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+7:    <body>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:570)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:356)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+20-Feb-2019 10:51:34.924 SEVERE [http-apr-8080-exec-25] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/webd4201.rahulkumarp] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 3 in the jsp file: /index.jsp
+title cannot be resolved to a variable
+1: <html>
+2:    <head>
+3:    	<% title = "Hello World">
+4:    		<@ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+Syntax error on tokens, ( expected instead
+1: <html>
+2:    <head>
+3:    	<% title = "Hello World">
+4:    		<@ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+7:    <body>
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+file cannot be resolved to a variable
+1: <html>
+2:    <head>
+3:    	<% title = "Hello World">
+4:    		<@ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+7:    <body>
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+Syntax error, insert ")" to complete Expression
+1: <html>
+2:    <head>
+3:    	<% title = "Hello World">
+4:    		<@ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+7:    <body>
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+Syntax error, insert ";" to complete Statement
+1: <html>
+2:    <head>
+3:    	<% title = "Hello World">
+4:    		<@ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+7:    <body>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 3 in the jsp file: /index.jsp
+title cannot be resolved to a variable
+1: <html>
+2:    <head>
+3:    	<% title = "Hello World">
+4:    		<@ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+Syntax error on tokens, ( expected instead
+1: <html>
+2:    <head>
+3:    	<% title = "Hello World">
+4:    		<@ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+7:    <body>
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+file cannot be resolved to a variable
+1: <html>
+2:    <head>
+3:    	<% title = "Hello World">
+4:    		<@ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+7:    <body>
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+Syntax error, insert ")" to complete Expression
+1: <html>
+2:    <head>
+3:    	<% title = "Hello World">
+4:    		<@ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+7:    <body>
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+Syntax error, insert ";" to complete Statement
+1: <html>
+2:    <head>
+3:    	<% title = "Hello World">
+4:    		<@ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+7:    <body>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:570)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:356)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+20-Feb-2019 13:15:09.894 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+20-Feb-2019 13:15:09.894 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+20-Feb-2019 13:15:29.681 SEVERE [http-apr-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/webd4201.rahulkumarp] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 3 in the jsp file: /index.jsp
+title cannot be resolved to a variable
+1: <html>
+2:    <head>
+3:    	<% title = "Hello World">
+4:    		<@ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+Syntax error on tokens, ( expected instead
+1: <html>
+2:    <head>
+3:    	<% title = "Hello World">
+4:    		<@ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+7:    <body>
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+file cannot be resolved to a variable
+1: <html>
+2:    <head>
+3:    	<% title = "Hello World">
+4:    		<@ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+7:    <body>
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+Syntax error, insert ")" to complete Expression
+1: <html>
+2:    <head>
+3:    	<% title = "Hello World">
+4:    		<@ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+7:    <body>
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+Syntax error, insert ";" to complete Statement
+1: <html>
+2:    <head>
+3:    	<% title = "Hello World">
+4:    		<@ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+7:    <body>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 3 in the jsp file: /index.jsp
+title cannot be resolved to a variable
+1: <html>
+2:    <head>
+3:    	<% title = "Hello World">
+4:    		<@ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+Syntax error on tokens, ( expected instead
+1: <html>
+2:    <head>
+3:    	<% title = "Hello World">
+4:    		<@ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+7:    <body>
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+file cannot be resolved to a variable
+1: <html>
+2:    <head>
+3:    	<% title = "Hello World">
+4:    		<@ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+7:    <body>
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+Syntax error, insert ")" to complete Expression
+1: <html>
+2:    <head>
+3:    	<% title = "Hello World">
+4:    		<@ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+7:    <body>
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+Syntax error, insert ";" to complete Statement
+1: <html>
+2:    <head>
+3:    	<% title = "Hello World">
+4:    		<@ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+7:    <body>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:570)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:356)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+20-Feb-2019 13:18:32.288 SEVERE [http-apr-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/webd4201.rahulkumarp] threw exception [/index.jsp (line: 4, column: 9) Invalid directive] with root cause
+ org.apache.jasper.JasperException: /index.jsp (line: 4, column: 9) Invalid directive
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:41)
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:275)
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:91)
+	at org.apache.jasper.compiler.Parser.parseDirective(Parser.java:492)
+	at org.apache.jasper.compiler.Parser.parseFileDirectives(Parser.java:1782)
+	at org.apache.jasper.compiler.Parser.parse(Parser.java:136)
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:227)
+	at org.apache.jasper.compiler.ParserController.parseDirectives(ParserController.java:117)
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:194)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:570)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:356)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+20-Feb-2019 13:19:06.697 SEVERE [http-apr-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/webd4201.rahulkumarp] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 3 in the jsp file: /index.jsp
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+1: <html>
+2:    <head>
+3:    	<% String title = "Hello World" %>
+4:    		<% @ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+Syntax error on tokens, delete these tokens
+1: <html>
+2:    <head>
+3:    	<% String title = "Hello World" %>
+4:    		<% @ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+7:    <body>
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+file cannot be resolved to a variable
+1: <html>
+2:    <head>
+3:    	<% String title = "Hello World" %>
+4:    		<% @ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+7:    <body>
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+Syntax error, insert ";" to complete Statement
+1: <html>
+2:    <head>
+3:    	<% String title = "Hello World" %>
+4:    		<% @ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+7:    <body>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 3 in the jsp file: /index.jsp
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+1: <html>
+2:    <head>
+3:    	<% String title = "Hello World" %>
+4:    		<% @ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+Syntax error on tokens, delete these tokens
+1: <html>
+2:    <head>
+3:    	<% String title = "Hello World" %>
+4:    		<% @ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+7:    <body>
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+file cannot be resolved to a variable
+1: <html>
+2:    <head>
+3:    	<% String title = "Hello World" %>
+4:    		<% @ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+7:    <body>
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+Syntax error, insert ";" to complete Statement
+1: <html>
+2:    <head>
+3:    	<% String title = "Hello World" %>
+4:    		<% @ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+7:    <body>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:570)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:356)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+20-Feb-2019 13:19:26.966 SEVERE [http-apr-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/webd4201.rahulkumarp] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+Syntax error on tokens, delete these tokens
+1: <html>
+2:    <head>
+3:    	<% String title = "Hello World"; %>
+4:    		<% @ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+7:    <body>
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+file cannot be resolved to a variable
+1: <html>
+2:    <head>
+3:    	<% String title = "Hello World"; %>
+4:    		<% @ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+7:    <body>
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+Syntax error, insert ";" to complete Statement
+1: <html>
+2:    <head>
+3:    	<% String title = "Hello World"; %>
+4:    		<% @ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+7:    <body>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+Syntax error on tokens, delete these tokens
+1: <html>
+2:    <head>
+3:    	<% String title = "Hello World"; %>
+4:    		<% @ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+7:    <body>
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+file cannot be resolved to a variable
+1: <html>
+2:    <head>
+3:    	<% String title = "Hello World"; %>
+4:    		<% @ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+7:    <body>
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+Syntax error, insert ";" to complete Statement
+1: <html>
+2:    <head>
+3:    	<% String title = "Hello World"; %>
+4:    		<% @ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+7:    <body>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:570)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:356)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+20-Feb-2019 13:20:01.663 SEVERE [http-apr-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/webd4201.rahulkumarp] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 3 in the jsp file: /index.jsp
+Syntax error on tokens, delete these tokens
+1: <html>
+2:    <head>
+3:    	<% String title = "Hello World"; >
+4:    		<% @ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+file cannot be resolved to a variable
+1: <html>
+2:    <head>
+3:    	<% String title = "Hello World"; >
+4:    		<% @ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+7:    <body>
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+Syntax error, insert ";" to complete Statement
+1: <html>
+2:    <head>
+3:    	<% String title = "Hello World"; >
+4:    		<% @ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+7:    <body>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 3 in the jsp file: /index.jsp
+Syntax error on tokens, delete these tokens
+1: <html>
+2:    <head>
+3:    	<% String title = "Hello World"; >
+4:    		<% @ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+file cannot be resolved to a variable
+1: <html>
+2:    <head>
+3:    	<% String title = "Hello World"; >
+4:    		<% @ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+7:    <body>
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+Syntax error, insert ";" to complete Statement
+1: <html>
+2:    <head>
+3:    	<% String title = "Hello World"; >
+4:    		<% @ import file="./heder.jsp"%>
+5:    	</head>
+6:    
+7:    <body>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:570)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:356)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+20-Feb-2019 13:20:22.780 SEVERE [http-apr-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/webd4201.rahulkumarp] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+Syntax error on tokens, delete these tokens
+1: <html>
+2:    <head>
+3:    	<% String title = "Hello World"; %>
+4:    		<% @ import file="./heder.jsp"; %>
+5:    	</head>
+6:    
+7:    <body>
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+file cannot be resolved to a variable
+1: <html>
+2:    <head>
+3:    	<% String title = "Hello World"; %>
+4:    		<% @ import file="./heder.jsp"; %>
+5:    	</head>
+6:    
+7:    <body>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+Syntax error on tokens, delete these tokens
+1: <html>
+2:    <head>
+3:    	<% String title = "Hello World"; %>
+4:    		<% @ import file="./heder.jsp"; %>
+5:    	</head>
+6:    
+7:    <body>
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+file cannot be resolved to a variable
+1: <html>
+2:    <head>
+3:    	<% String title = "Hello World"; %>
+4:    		<% @ import file="./heder.jsp"; %>
+5:    	</head>
+6:    
+7:    <body>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:570)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:356)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+20-Feb-2019 13:22:56.296 SEVERE [http-apr-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/webd4201.rahulkumarp] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+Syntax error on token "file", VariableDeclaratorId expected after this token
+1: <html>
+2:    <head>
+3:    	<%! String title = "Hello World"; %>
+4:    		<% @ include file="./heder.jsp"; %>
+5:    	</head>
+6:    
+7:    <body>
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+file cannot be resolved to a type
+1: <html>
+2:    <head>
+3:    	<%! String title = "Hello World"; %>
+4:    		<% @ include file="./heder.jsp"; %>
+5:    	</head>
+6:    
+7:    <body>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+Syntax error on token "file", VariableDeclaratorId expected after this token
+1: <html>
+2:    <head>
+3:    	<%! String title = "Hello World"; %>
+4:    		<% @ include file="./heder.jsp"; %>
+5:    	</head>
+6:    
+7:    <body>
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+file cannot be resolved to a type
+1: <html>
+2:    <head>
+3:    	<%! String title = "Hello World"; %>
+4:    		<% @ include file="./heder.jsp"; %>
+5:    	</head>
+6:    
+7:    <body>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:570)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:356)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+20-Feb-2019 13:24:38.783 SEVERE [http-apr-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/webd4201.rahulkumarp] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+Syntax error on token "file", VariableDeclaratorId expected after this token
+1: <html>
+2:    <head>
+3:    	<%! String title = "Hello World"; %>
+4:    		<% @ include file="./heder.jsp"; %>
+5:    	</head>
+6:    
+7:    <body>
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+file cannot be resolved to a type
+1: <html>
+2:    <head>
+3:    	<%! String title = "Hello World"; %>
+4:    		<% @ include file="./heder.jsp"; %>
+5:    	</head>
+6:    
+7:    <body>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+Syntax error on token "file", VariableDeclaratorId expected after this token
+1: <html>
+2:    <head>
+3:    	<%! String title = "Hello World"; %>
+4:    		<% @ include file="./heder.jsp"; %>
+5:    	</head>
+6:    
+7:    <body>
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+file cannot be resolved to a type
+1: <html>
+2:    <head>
+3:    	<%! String title = "Hello World"; %>
+4:    		<% @ include file="./heder.jsp"; %>
+5:    	</head>
+6:    
+7:    <body>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:570)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:356)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+20-Feb-2019 13:25:07.200 SEVERE [http-apr-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/webd4201.rahulkumarp] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+Syntax error on token "file", VariableDeclaratorId expected after this token
+1: <html>
+2:    <head>
+3:    	<%! String title = "Hello World"; %>
+4:    		<% @ include file="./heder.*"; %>
+5:    	</head>
+6:    
+7:    <body>
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+file cannot be resolved to a type
+1: <html>
+2:    <head>
+3:    	<%! String title = "Hello World"; %>
+4:    		<% @ include file="./heder.*"; %>
+5:    	</head>
+6:    
+7:    <body>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+Syntax error on token "file", VariableDeclaratorId expected after this token
+1: <html>
+2:    <head>
+3:    	<%! String title = "Hello World"; %>
+4:    		<% @ include file="./heder.*"; %>
+5:    	</head>
+6:    
+7:    <body>
+
+
+An error occurred at line: 4 in the jsp file: /index.jsp
+file cannot be resolved to a type
+1: <html>
+2:    <head>
+3:    	<%! String title = "Hello World"; %>
+4:    		<% @ include file="./heder.*"; %>
+5:    	</head>
+6:    
+7:    <body>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:570)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:356)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+20-Feb-2019 13:26:34.865 SEVERE [http-apr-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/webd4201.rahulkumarp] threw exception [/index.jsp (line: 4, column: 6) File [heder.jsp] not found] with root cause
+ org.apache.jasper.JasperException: /index.jsp (line: 4, column: 6) File [heder.jsp] not found
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:41)
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:275)
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:91)
+	at org.apache.jasper.compiler.Parser.processIncludeDirective(Parser.java:323)
+	at org.apache.jasper.compiler.Parser.parseIncludeDirective(Parser.java:358)
+	at org.apache.jasper.compiler.Parser.parseDirective(Parser.java:461)
+	at org.apache.jasper.compiler.Parser.parseFileDirectives(Parser.java:1782)
+	at org.apache.jasper.compiler.Parser.parse(Parser.java:136)
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:227)
+	at org.apache.jasper.compiler.ParserController.parseDirectives(ParserController.java:117)
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:194)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:570)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:356)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+20-Feb-2019 13:26:55.771 SEVERE [http-apr-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/webd4201.rahulkumarp] threw exception [/index.jsp (line: 4, column: 6) File [./heder.jsp] not found] with root cause
+ org.apache.jasper.JasperException: /index.jsp (line: 4, column: 6) File [./heder.jsp] not found
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:41)
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:275)
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:91)
+	at org.apache.jasper.compiler.Parser.processIncludeDirective(Parser.java:323)
+	at org.apache.jasper.compiler.Parser.parseIncludeDirective(Parser.java:358)
+	at org.apache.jasper.compiler.Parser.parseDirective(Parser.java:461)
+	at org.apache.jasper.compiler.Parser.parseFileDirectives(Parser.java:1782)
+	at org.apache.jasper.compiler.Parser.parse(Parser.java:136)
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:227)
+	at org.apache.jasper.compiler.ParserController.parseDirectives(ParserController.java:117)
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:194)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:570)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:356)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+20-Feb-2019 13:53:00.574 SEVERE [http-apr-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/webd4201.rahulkumarp] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 5 in the jsp file: /header.jsp
+title cannot be resolved to a variable
+2: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+3: <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+4: 
+5: 	<title><%= title %></title>
+6: 	<style>
+7: body {
+8:   margin: 0;
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 5 in the jsp file: /header.jsp
+title cannot be resolved to a variable
+2: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+3: <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+4: 
+5: 	<title><%= title %></title>
+6: 	<style>
+7: body {
+8:   margin: 0;
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:570)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:356)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+20-Feb-2019 13:53:57.726 SEVERE [http-apr-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/webd4201.rahulkumarp] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 5 in the jsp file: /header.jsp
+title cannot be resolved to a variable
+2: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+3: <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+4: 
+5: 	<title><%= title %></title>
+6: 	<link rel="stylesheet" type="text/css" href="./css/webd4201.css" /> 
+7: 	<%@ page import = "java.util.*" %>
+8: </head>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 5 in the jsp file: /header.jsp
+title cannot be resolved to a variable
+2: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+3: <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+4: 
+5: 	<title><%= title %></title>
+6: 	<link rel="stylesheet" type="text/css" href="./css/webd4201.css" /> 
+7: 	<%@ page import = "java.util.*" %>
+8: </head>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:570)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:356)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+20-Feb-2019 13:54:53.054 SEVERE [http-apr-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/webd4201.rahulkumarp] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 5 in the jsp file: /header.jsp
+title cannot be resolved to a variable
+2: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+3: <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+4: 
+5: 	<!-- <title><%= title %></title> -->
+6: 	<link rel="stylesheet" type="text/css" href="./css/webd4201.css" /> 
+7: 	<%@ page import = "java.util.*" %>
+8: </head>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 5 in the jsp file: /header.jsp
+title cannot be resolved to a variable
+2: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+3: <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+4: 
+5: 	<!-- <title><%= title %></title> -->
+6: 	<link rel="stylesheet" type="text/css" href="./css/webd4201.css" /> 
+7: 	<%@ page import = "java.util.*" %>
+8: </head>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:570)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:356)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+20-Feb-2019 13:55:05.338 SEVERE [http-apr-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/webd4201.rahulkumarp] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 5 in the jsp file: /header.jsp
+title cannot be resolved to a variable
+2: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+3: <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+4: 
+5: 	<!-- <title><%= title %></title> -->
+6: 	<link rel="stylesheet" type="text/css" href="./css/webd4201.css" /> 
+7: 	<%@ page import = "java.util.*" %>
+8: </head>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 5 in the jsp file: /header.jsp
+title cannot be resolved to a variable
+2: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+3: <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+4: 
+5: 	<!-- <title><%= title %></title> -->
+6: 	<link rel="stylesheet" type="text/css" href="./css/webd4201.css" /> 
+7: 	<%@ page import = "java.util.*" %>
+8: </head>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:570)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:356)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+20-Feb-2019 14:13:10.674 SEVERE [http-apr-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/webd4201.rahulkumarp] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 11 in the jsp file: /header.jsp
+errorMessage cannot be resolved to a variable
+8: 	<%@ page import = "webd4201.patelr.*" %>
+9: 	<%   String student = (String)session.getAttribute("errors"); 
+10: 	     String login = (String)session.getAttribute("login");
+11: 	    if(errorMessage == null)
+12: 		  errorMessage="";
+13: 	    if(login == null)
+14: 		  login = "";
+
+
+An error occurred at line: 12 in the jsp file: /header.jsp
+errorMessage cannot be resolved to a variable
+9: 	<%   String student = (String)session.getAttribute("errors"); 
+10: 	     String login = (String)session.getAttribute("login");
+11: 	    if(errorMessage == null)
+12: 		  errorMessage="";
+13: 	    if(login == null)
+14: 		  login = "";
+15: %>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 11 in the jsp file: /header.jsp
+errorMessage cannot be resolved to a variable
+8: 	<%@ page import = "webd4201.patelr.*" %>
+9: 	<%   String student = (String)session.getAttribute("errors"); 
+10: 	     String login = (String)session.getAttribute("login");
+11: 	    if(errorMessage == null)
+12: 		  errorMessage="";
+13: 	    if(login == null)
+14: 		  login = "";
+
+
+An error occurred at line: 12 in the jsp file: /header.jsp
+errorMessage cannot be resolved to a variable
+9: 	<%   String student = (String)session.getAttribute("errors"); 
+10: 	     String login = (String)session.getAttribute("login");
+11: 	    if(errorMessage == null)
+12: 		  errorMessage="";
+13: 	    if(login == null)
+14: 		  login = "";
+15: %>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:570)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:356)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+20-Feb-2019 15:06:54.048 SEVERE [http-apr-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/webd4201.rahulkumarp] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 39 in the jsp file: /header.jsp
+aStudent cannot be resolved to a variable
+36: 	<%@ page import = "java.util.*" %>
+37: 	<%@ page import = "webd4201.patelr.*" %>
+38:  <%
+39:       session.setAttribute("student", aStudent);
+40:       session.setAttribute("errors", "Problem logging on");
+41:       session.setAttribute("today", new Date());
+42:  %>
+
+
+An error occurred at line: 47 in the jsp file: /header.jsp
+Student cannot be resolved to a type
+44: <body>
+45: <body id="body">
+46: 	   <%  
+47:         Student someStudent= (Student)session.getAttribute("student");
+48:         String message = (String)session.getAttribute(" errors");String someDate= (Date)session.getAttribute("today");
+49:        if(message == null)
+50:         errorMessage="";
+
+
+An error occurred at line: 47 in the jsp file: /header.jsp
+Student cannot be resolved to a type
+44: <body>
+45: <body id="body">
+46: 	   <%  
+47:         Student someStudent= (Student)session.getAttribute("student");
+48:         String message = (String)session.getAttribute(" errors");String someDate= (Date)session.getAttribute("today");
+49:        if(message == null)
+50:         errorMessage="";
+
+
+An error occurred at line: 48 in the jsp file: /header.jsp
+Type mismatch: cannot convert from Date to String
+45: <body id="body">
+46: 	   <%  
+47:         Student someStudent= (Student)session.getAttribute("student");
+48:         String message = (String)session.getAttribute(" errors");String someDate= (Date)session.getAttribute("today");
+49:        if(message == null)
+50:         errorMessage="";
+51:        if(someStudent == null)
+
+
+An error occurred at line: 50 in the jsp file: /header.jsp
+errorMessage cannot be resolved to a variable
+47:         Student someStudent= (Student)session.getAttribute("student");
+48:         String message = (String)session.getAttribute(" errors");String someDate= (Date)session.getAttribute("today");
+49:        if(message == null)
+50:         errorMessage="";
+51:        if(someStudent == null)
+52:         login = "";
+53:       <div class="navigation">
+
+
+An error occurred at line: 52 in the jsp file: /header.jsp
+login cannot be resolved to a variable
+49:        if(message == null)
+50:         errorMessage="";
+51:        if(someStudent == null)
+52:         login = "";
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+
+
+An error occurred at line: 53 in the jsp file: /header.jsp
+Syntax error on tokens, Expression expected instead
+50:         errorMessage="";
+51:        if(someStudent == null)
+52:         login = "";
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+
+
+An error occurred at line: 53 in the jsp file: /header.jsp
+Syntax error on token(s), misplaced construct(s)
+50:         errorMessage="";
+51:        if(someStudent == null)
+52:         login = "";
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+
+
+An error occurred at line: 54 in the jsp file: /header.jsp
+Syntax error on tokens, ( expected instead
+51:        if(someStudent == null)
+52:         login = "";
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+
+
+An error occurred at line: 54 in the jsp file: /header.jsp
+Syntax error on token "/", delete this token
+51:        if(someStudent == null)
+52:         login = "";
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+
+
+An error occurred at line: 54 in the jsp file: /header.jsp
+Syntax error on token(s), misplaced construct(s)
+51:        if(someStudent == null)
+52:         login = "";
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+
+
+An error occurred at line: 55 in the jsp file: /header.jsp
+Syntax error, insert ")" to complete Expression
+52:         login = "";
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+
+
+An error occurred at line: 55 in the jsp file: /header.jsp
+Syntax error, insert ";" to complete Statement
+52:         login = "";
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+
+
+An error occurred at line: 55 in the jsp file: /header.jsp
+Syntax error on token "/", delete this token
+52:         login = "";
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+
+
+An error occurred at line: 55 in the jsp file: /header.jsp
+Syntax error on token(s), misplaced construct(s)
+52:         login = "";
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+
+
+An error occurred at line: 56 in the jsp file: /header.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+
+
+An error occurred at line: 56 in the jsp file: /header.jsp
+Syntax error, insert ";" to complete Statement
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+
+
+An error occurred at line: 56 in the jsp file: /header.jsp
+Syntax error on token "/", delete this token
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+
+
+An error occurred at line: 56 in the jsp file: /header.jsp
+Syntax error on token(s), misplaced construct(s)
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+
+
+An error occurred at line: 57 in the jsp file: /header.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+60:      %>
+
+
+An error occurred at line: 57 in the jsp file: /header.jsp
+Syntax error, insert ";" to complete Statement
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+60:      %>
+
+
+An error occurred at line: 57 in the jsp file: /header.jsp
+Syntax error on token "/", delete this token
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+60:      %>
+
+
+An error occurred at line: 57 in the jsp file: /header.jsp
+Syntax error on token(s), misplaced construct(s)
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+60:      %>
+
+
+An error occurred at line: 58 in the jsp file: /header.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+60:      %>
+61:    
+
+
+An error occurred at line: 58 in the jsp file: /header.jsp
+Syntax error, insert ";" to complete Statement
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+60:      %>
+61:    
+
+
+An error occurred at line: 58 in the jsp file: /header.jsp
+Syntax error on token "/", delete this token
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+60:      %>
+61:    
+
+
+An error occurred at line: 59 in the jsp file: /header.jsp
+Syntax error on token "<", invalid Expression
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+60:      %>
+61:    
+62: </body>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 39 in the jsp file: /header.jsp
+aStudent cannot be resolved to a variable
+36: 	<%@ page import = "java.util.*" %>
+37: 	<%@ page import = "webd4201.patelr.*" %>
+38:  <%
+39:       session.setAttribute("student", aStudent);
+40:       session.setAttribute("errors", "Problem logging on");
+41:       session.setAttribute("today", new Date());
+42:  %>
+
+
+An error occurred at line: 47 in the jsp file: /header.jsp
+Student cannot be resolved to a type
+44: <body>
+45: <body id="body">
+46: 	   <%  
+47:         Student someStudent= (Student)session.getAttribute("student");
+48:         String message = (String)session.getAttribute(" errors");String someDate= (Date)session.getAttribute("today");
+49:        if(message == null)
+50:         errorMessage="";
+
+
+An error occurred at line: 47 in the jsp file: /header.jsp
+Student cannot be resolved to a type
+44: <body>
+45: <body id="body">
+46: 	   <%  
+47:         Student someStudent= (Student)session.getAttribute("student");
+48:         String message = (String)session.getAttribute(" errors");String someDate= (Date)session.getAttribute("today");
+49:        if(message == null)
+50:         errorMessage="";
+
+
+An error occurred at line: 48 in the jsp file: /header.jsp
+Type mismatch: cannot convert from Date to String
+45: <body id="body">
+46: 	   <%  
+47:         Student someStudent= (Student)session.getAttribute("student");
+48:         String message = (String)session.getAttribute(" errors");String someDate= (Date)session.getAttribute("today");
+49:        if(message == null)
+50:         errorMessage="";
+51:        if(someStudent == null)
+
+
+An error occurred at line: 50 in the jsp file: /header.jsp
+errorMessage cannot be resolved to a variable
+47:         Student someStudent= (Student)session.getAttribute("student");
+48:         String message = (String)session.getAttribute(" errors");String someDate= (Date)session.getAttribute("today");
+49:        if(message == null)
+50:         errorMessage="";
+51:        if(someStudent == null)
+52:         login = "";
+53:       <div class="navigation">
+
+
+An error occurred at line: 52 in the jsp file: /header.jsp
+login cannot be resolved to a variable
+49:        if(message == null)
+50:         errorMessage="";
+51:        if(someStudent == null)
+52:         login = "";
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+
+
+An error occurred at line: 53 in the jsp file: /header.jsp
+Syntax error on tokens, Expression expected instead
+50:         errorMessage="";
+51:        if(someStudent == null)
+52:         login = "";
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+
+
+An error occurred at line: 53 in the jsp file: /header.jsp
+Syntax error on token(s), misplaced construct(s)
+50:         errorMessage="";
+51:        if(someStudent == null)
+52:         login = "";
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+
+
+An error occurred at line: 54 in the jsp file: /header.jsp
+Syntax error on tokens, ( expected instead
+51:        if(someStudent == null)
+52:         login = "";
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+
+
+An error occurred at line: 54 in the jsp file: /header.jsp
+Syntax error on token "/", delete this token
+51:        if(someStudent == null)
+52:         login = "";
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+
+
+An error occurred at line: 54 in the jsp file: /header.jsp
+Syntax error on token(s), misplaced construct(s)
+51:        if(someStudent == null)
+52:         login = "";
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+
+
+An error occurred at line: 55 in the jsp file: /header.jsp
+Syntax error, insert ")" to complete Expression
+52:         login = "";
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+
+
+An error occurred at line: 55 in the jsp file: /header.jsp
+Syntax error, insert ";" to complete Statement
+52:         login = "";
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+
+
+An error occurred at line: 55 in the jsp file: /header.jsp
+Syntax error on token "/", delete this token
+52:         login = "";
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+
+
+An error occurred at line: 55 in the jsp file: /header.jsp
+Syntax error on token(s), misplaced construct(s)
+52:         login = "";
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+
+
+An error occurred at line: 56 in the jsp file: /header.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+
+
+An error occurred at line: 56 in the jsp file: /header.jsp
+Syntax error, insert ";" to complete Statement
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+
+
+An error occurred at line: 56 in the jsp file: /header.jsp
+Syntax error on token "/", delete this token
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+
+
+An error occurred at line: 56 in the jsp file: /header.jsp
+Syntax error on token(s), misplaced construct(s)
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+
+
+An error occurred at line: 57 in the jsp file: /header.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+60:      %>
+
+
+An error occurred at line: 57 in the jsp file: /header.jsp
+Syntax error, insert ";" to complete Statement
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+60:      %>
+
+
+An error occurred at line: 57 in the jsp file: /header.jsp
+Syntax error on token "/", delete this token
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+60:      %>
+
+
+An error occurred at line: 57 in the jsp file: /header.jsp
+Syntax error on token(s), misplaced construct(s)
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+60:      %>
+
+
+An error occurred at line: 58 in the jsp file: /header.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+60:      %>
+61:    
+
+
+An error occurred at line: 58 in the jsp file: /header.jsp
+Syntax error, insert ";" to complete Statement
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+60:      %>
+61:    
+
+
+An error occurred at line: 58 in the jsp file: /header.jsp
+Syntax error on token "/", delete this token
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+60:      %>
+61:    
+
+
+An error occurred at line: 59 in the jsp file: /header.jsp
+Syntax error on token "<", invalid Expression
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+60:      %>
+61:    
+62: </body>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:570)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:356)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+20-Feb-2019 15:08:05.412 SEVERE [http-apr-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/webd4201.rahulkumarp] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 39 in the jsp file: /header.jsp
+aStudent cannot be resolved to a variable
+36: 	<%@ page import = "java.util.*" %>
+37: 	<%@ page import = "webd4201.patelr.*" %>
+38: <!--  <%
+39:       session.setAttribute("student", aStudent);
+40:       session.setAttribute("errors", "Problem logging on");
+41:       session.setAttribute("today", new Date());
+42:  %> -->
+
+
+An error occurred at line: 47 in the jsp file: /header.jsp
+Student cannot be resolved to a type
+44: <body>
+45: <body id="body">
+46: 	  <!--  <%  
+47:         Student someStudent= (Student)session.getAttribute("student");
+48:         String message = (String)session.getAttribute(" errors");String someDate= (Date)session.getAttribute("today");
+49:        if(message == null)
+50:         errorMessage="";
+
+
+An error occurred at line: 47 in the jsp file: /header.jsp
+Student cannot be resolved to a type
+44: <body>
+45: <body id="body">
+46: 	  <!--  <%  
+47:         Student someStudent= (Student)session.getAttribute("student");
+48:         String message = (String)session.getAttribute(" errors");String someDate= (Date)session.getAttribute("today");
+49:        if(message == null)
+50:         errorMessage="";
+
+
+An error occurred at line: 48 in the jsp file: /header.jsp
+Type mismatch: cannot convert from Date to String
+45: <body id="body">
+46: 	  <!--  <%  
+47:         Student someStudent= (Student)session.getAttribute("student");
+48:         String message = (String)session.getAttribute(" errors");String someDate= (Date)session.getAttribute("today");
+49:        if(message == null)
+50:         errorMessage="";
+51:        if(someStudent == null)
+
+
+An error occurred at line: 50 in the jsp file: /header.jsp
+errorMessage cannot be resolved to a variable
+47:         Student someStudent= (Student)session.getAttribute("student");
+48:         String message = (String)session.getAttribute(" errors");String someDate= (Date)session.getAttribute("today");
+49:        if(message == null)
+50:         errorMessage="";
+51:        if(someStudent == null)
+52:         login = "";
+53:       <div class="navigation">
+
+
+An error occurred at line: 52 in the jsp file: /header.jsp
+login cannot be resolved to a variable
+49:        if(message == null)
+50:         errorMessage="";
+51:        if(someStudent == null)
+52:         login = "";
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+
+
+An error occurred at line: 53 in the jsp file: /header.jsp
+Syntax error on tokens, Expression expected instead
+50:         errorMessage="";
+51:        if(someStudent == null)
+52:         login = "";
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+
+
+An error occurred at line: 53 in the jsp file: /header.jsp
+Syntax error on token(s), misplaced construct(s)
+50:         errorMessage="";
+51:        if(someStudent == null)
+52:         login = "";
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+
+
+An error occurred at line: 54 in the jsp file: /header.jsp
+Syntax error on tokens, ( expected instead
+51:        if(someStudent == null)
+52:         login = "";
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+
+
+An error occurred at line: 54 in the jsp file: /header.jsp
+Syntax error on token "/", delete this token
+51:        if(someStudent == null)
+52:         login = "";
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+
+
+An error occurred at line: 54 in the jsp file: /header.jsp
+Syntax error on token(s), misplaced construct(s)
+51:        if(someStudent == null)
+52:         login = "";
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+
+
+An error occurred at line: 55 in the jsp file: /header.jsp
+Syntax error, insert ")" to complete Expression
+52:         login = "";
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+
+
+An error occurred at line: 55 in the jsp file: /header.jsp
+Syntax error, insert ";" to complete Statement
+52:         login = "";
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+
+
+An error occurred at line: 55 in the jsp file: /header.jsp
+Syntax error on token "/", delete this token
+52:         login = "";
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+
+
+An error occurred at line: 55 in the jsp file: /header.jsp
+Syntax error on token(s), misplaced construct(s)
+52:         login = "";
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+
+
+An error occurred at line: 56 in the jsp file: /header.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+
+
+An error occurred at line: 56 in the jsp file: /header.jsp
+Syntax error, insert ";" to complete Statement
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+
+
+An error occurred at line: 56 in the jsp file: /header.jsp
+Syntax error on token "/", delete this token
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+
+
+An error occurred at line: 56 in the jsp file: /header.jsp
+Syntax error on token(s), misplaced construct(s)
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+
+
+An error occurred at line: 57 in the jsp file: /header.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+60:      %> -->
+
+
+An error occurred at line: 57 in the jsp file: /header.jsp
+Syntax error, insert ";" to complete Statement
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+60:      %> -->
+
+
+An error occurred at line: 57 in the jsp file: /header.jsp
+Syntax error on token "/", delete this token
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+60:      %> -->
+
+
+An error occurred at line: 57 in the jsp file: /header.jsp
+Syntax error on token(s), misplaced construct(s)
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+60:      %> -->
+
+
+An error occurred at line: 58 in the jsp file: /header.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+60:      %> -->
+61:     <div class="navigation">
+
+
+An error occurred at line: 58 in the jsp file: /header.jsp
+Syntax error, insert ";" to complete Statement
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+60:      %> -->
+61:     <div class="navigation">
+
+
+An error occurred at line: 58 in the jsp file: /header.jsp
+Syntax error on token "/", delete this token
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+60:      %> -->
+61:     <div class="navigation">
+
+
+An error occurred at line: 59 in the jsp file: /header.jsp
+Syntax error on token "<", invalid Expression
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+60:      %> -->
+61:     <div class="navigation">
+62:    <a class="active" href="#home">Home</a>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 39 in the jsp file: /header.jsp
+aStudent cannot be resolved to a variable
+36: 	<%@ page import = "java.util.*" %>
+37: 	<%@ page import = "webd4201.patelr.*" %>
+38: <!--  <%
+39:       session.setAttribute("student", aStudent);
+40:       session.setAttribute("errors", "Problem logging on");
+41:       session.setAttribute("today", new Date());
+42:  %> -->
+
+
+An error occurred at line: 47 in the jsp file: /header.jsp
+Student cannot be resolved to a type
+44: <body>
+45: <body id="body">
+46: 	  <!--  <%  
+47:         Student someStudent= (Student)session.getAttribute("student");
+48:         String message = (String)session.getAttribute(" errors");String someDate= (Date)session.getAttribute("today");
+49:        if(message == null)
+50:         errorMessage="";
+
+
+An error occurred at line: 47 in the jsp file: /header.jsp
+Student cannot be resolved to a type
+44: <body>
+45: <body id="body">
+46: 	  <!--  <%  
+47:         Student someStudent= (Student)session.getAttribute("student");
+48:         String message = (String)session.getAttribute(" errors");String someDate= (Date)session.getAttribute("today");
+49:        if(message == null)
+50:         errorMessage="";
+
+
+An error occurred at line: 48 in the jsp file: /header.jsp
+Type mismatch: cannot convert from Date to String
+45: <body id="body">
+46: 	  <!--  <%  
+47:         Student someStudent= (Student)session.getAttribute("student");
+48:         String message = (String)session.getAttribute(" errors");String someDate= (Date)session.getAttribute("today");
+49:        if(message == null)
+50:         errorMessage="";
+51:        if(someStudent == null)
+
+
+An error occurred at line: 50 in the jsp file: /header.jsp
+errorMessage cannot be resolved to a variable
+47:         Student someStudent= (Student)session.getAttribute("student");
+48:         String message = (String)session.getAttribute(" errors");String someDate= (Date)session.getAttribute("today");
+49:        if(message == null)
+50:         errorMessage="";
+51:        if(someStudent == null)
+52:         login = "";
+53:       <div class="navigation">
+
+
+An error occurred at line: 52 in the jsp file: /header.jsp
+login cannot be resolved to a variable
+49:        if(message == null)
+50:         errorMessage="";
+51:        if(someStudent == null)
+52:         login = "";
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+
+
+An error occurred at line: 53 in the jsp file: /header.jsp
+Syntax error on tokens, Expression expected instead
+50:         errorMessage="";
+51:        if(someStudent == null)
+52:         login = "";
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+
+
+An error occurred at line: 53 in the jsp file: /header.jsp
+Syntax error on token(s), misplaced construct(s)
+50:         errorMessage="";
+51:        if(someStudent == null)
+52:         login = "";
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+
+
+An error occurred at line: 54 in the jsp file: /header.jsp
+Syntax error on tokens, ( expected instead
+51:        if(someStudent == null)
+52:         login = "";
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+
+
+An error occurred at line: 54 in the jsp file: /header.jsp
+Syntax error on token "/", delete this token
+51:        if(someStudent == null)
+52:         login = "";
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+
+
+An error occurred at line: 54 in the jsp file: /header.jsp
+Syntax error on token(s), misplaced construct(s)
+51:        if(someStudent == null)
+52:         login = "";
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+
+
+An error occurred at line: 55 in the jsp file: /header.jsp
+Syntax error, insert ")" to complete Expression
+52:         login = "";
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+
+
+An error occurred at line: 55 in the jsp file: /header.jsp
+Syntax error, insert ";" to complete Statement
+52:         login = "";
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+
+
+An error occurred at line: 55 in the jsp file: /header.jsp
+Syntax error on token "/", delete this token
+52:         login = "";
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+
+
+An error occurred at line: 55 in the jsp file: /header.jsp
+Syntax error on token(s), misplaced construct(s)
+52:         login = "";
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+
+
+An error occurred at line: 56 in the jsp file: /header.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+
+
+An error occurred at line: 56 in the jsp file: /header.jsp
+Syntax error, insert ";" to complete Statement
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+
+
+An error occurred at line: 56 in the jsp file: /header.jsp
+Syntax error on token "/", delete this token
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+
+
+An error occurred at line: 56 in the jsp file: /header.jsp
+Syntax error on token(s), misplaced construct(s)
+53:       <div class="navigation">
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+
+
+An error occurred at line: 57 in the jsp file: /header.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+60:      %> -->
+
+
+An error occurred at line: 57 in the jsp file: /header.jsp
+Syntax error, insert ";" to complete Statement
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+60:      %> -->
+
+
+An error occurred at line: 57 in the jsp file: /header.jsp
+Syntax error on token "/", delete this token
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+60:      %> -->
+
+
+An error occurred at line: 57 in the jsp file: /header.jsp
+Syntax error on token(s), misplaced construct(s)
+54:    <a class="active" href="#home">Home</a>
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+60:      %> -->
+
+
+An error occurred at line: 58 in the jsp file: /header.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+60:      %> -->
+61:     <div class="navigation">
+
+
+An error occurred at line: 58 in the jsp file: /header.jsp
+Syntax error, insert ";" to complete Statement
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+60:      %> -->
+61:     <div class="navigation">
+
+
+An error occurred at line: 58 in the jsp file: /header.jsp
+Syntax error on token "/", delete this token
+55:    <a href="./login.jsp">Login</a>
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+60:      %> -->
+61:     <div class="navigation">
+
+
+An error occurred at line: 59 in the jsp file: /header.jsp
+Syntax error on token "<", invalid Expression
+56:    <a href="./register.jsp">Register</a>
+57:    <a href="./update.jsp">Update</a>
+58:    <a href="./logout.jsp">Logout</a>
+59:   </div>
+60:      %> -->
+61:     <div class="navigation">
+62:    <a class="active" href="#home">Home</a>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:570)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:356)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+20-Feb-2019 15:52:54.800 SEVERE [http-apr-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/webd4201.rahulkumarp] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 4 in the jsp file: /footer.jsp
+Calendar cannot be resolved
+1: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+2: 
+3: 
+4: 	<p><a href="http://validator.w3.org/check?uri=referer"><imgstyle="width:88px;height:31px;position:fixed;bottom: 10px;right:50px;"src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" /></a></p><span>&copy;<%= (Calendar.getInstance()).get(Calendar.YEAR) %></span></body></html>
+5: 	<div class="navigation">
+6:    <a class="active" href="#home">Home</a>
+7:    <a href="./login.jsp">Login</a>
+
+
+An error occurred at line: 4 in the jsp file: /footer.jsp
+Calendar.YEAR cannot be resolved to a type
+1: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+2: 
+3: 
+4: 	<p><a href="http://validator.w3.org/check?uri=referer"><imgstyle="width:88px;height:31px;position:fixed;bottom: 10px;right:50px;"src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" /></a></p><span>&copy;<%= (Calendar.getInstance()).get(Calendar.YEAR) %></span></body></html>
+5: 	<div class="navigation">
+6:    <a class="active" href="#home">Home</a>
+7:    <a href="./login.jsp">Login</a>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 4 in the jsp file: /footer.jsp
+Calendar cannot be resolved
+1: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+2: 
+3: 
+4: 	<p><a href="http://validator.w3.org/check?uri=referer"><imgstyle="width:88px;height:31px;position:fixed;bottom: 10px;right:50px;"src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" /></a></p><span>&copy;<%= (Calendar.getInstance()).get(Calendar.YEAR) %></span></body></html>
+5: 	<div class="navigation">
+6:    <a class="active" href="#home">Home</a>
+7:    <a href="./login.jsp">Login</a>
+
+
+An error occurred at line: 4 in the jsp file: /footer.jsp
+Calendar.YEAR cannot be resolved to a type
+1: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+2: 
+3: 
+4: 	<p><a href="http://validator.w3.org/check?uri=referer"><imgstyle="width:88px;height:31px;position:fixed;bottom: 10px;right:50px;"src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" /></a></p><span>&copy;<%= (Calendar.getInstance()).get(Calendar.YEAR) %></span></body></html>
+5: 	<div class="navigation">
+6:    <a class="active" href="#home">Home</a>
+7:    <a href="./login.jsp">Login</a>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:570)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:356)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+

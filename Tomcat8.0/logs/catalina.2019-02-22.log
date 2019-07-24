@@ -1,0 +1,175 @@
+22-Feb-2019 09:34:13.717 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.18
+22-Feb-2019 09:34:13.749 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 23 2015 11:56:07 UTC
+22-Feb-2019 09:34:13.749 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.18.0
+22-Feb-2019 09:34:13.749 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+22-Feb-2019 09:34:13.785 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+22-Feb-2019 09:34:13.785 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+22-Feb-2019 09:34:13.785 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jre1.8.0_192
+22-Feb-2019 09:34:13.785 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_192-b12
+22-Feb-2019 09:34:13.785 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+22-Feb-2019 09:34:13.785 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0
+22-Feb-2019 09:34:13.785 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0
+22-Feb-2019 09:34:13.785 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=F:/DC/04/WEBD-Enterprise/d2/Tomcat8.0/conf/logging.properties
+22-Feb-2019 09:34:13.785 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+22-Feb-2019 09:34:13.785 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=F:/DC/04/WEBD-Enterprise/d2/Tomcat8.0/endorsed
+22-Feb-2019 09:34:13.785 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=F:/DC/04/WEBD-Enterprise/d2/Tomcat8.0
+22-Feb-2019 09:34:13.785 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=F:/DC/04/WEBD-Enterprise/d2/Tomcat8.0
+22-Feb-2019 09:34:13.785 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=F:/DC/04/WEBD-Enterprise/d2/Tomcat8.0/temp
+22-Feb-2019 09:34:13.785 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library 1.1.32 using APR version 1.5.1.
+22-Feb-2019 09:34:13.789 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+22-Feb-2019 09:34:15.029 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1j 15 Oct 2014)
+22-Feb-2019 09:34:16.987 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-apr-8080"]
+22-Feb-2019 09:34:17.003 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8009"]
+22-Feb-2019 09:34:17.007 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 4358 ms
+22-Feb-2019 09:34:17.071 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+22-Feb-2019 09:34:17.071 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.18
+22-Feb-2019 09:34:17.075 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\demo
+22-Feb-2019 09:34:17.850 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+22-Feb-2019 09:34:18.080 INFO [localhost-startStop-1] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [190] milliseconds.
+22-Feb-2019 09:34:18.111 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\demo has finished in 1,036 ms
+22-Feb-2019 09:34:18.111 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\demo - Copy
+22-Feb-2019 09:34:18.614 SEVERE [localhost-startStop-1] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/demo - Copy]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:725)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:714)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1069)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1719)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalArgumentException: Servlet mapping specifies an unknown servlet name LogoutServlet
+	at org.apache.catalina.core.StandardContext.addServletMapping(StandardContext.java:3071)
+	at org.apache.catalina.core.StandardContext.addServletMapping(StandardContext.java:3050)
+	at org.apache.catalina.startup.ContextConfig.configureContext(ContextConfig.java:1372)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1176)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:771)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:305)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5053)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 10 more
+
+22-Feb-2019 09:34:18.614 SEVERE [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Error deploying web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\demo - Copy
+ java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/demo - Copy]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:728)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:714)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1069)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1719)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+22-Feb-2019 09:34:18.614 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\demo - Copy has finished in 503 ms
+22-Feb-2019 09:34:18.614 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\docs
+22-Feb-2019 09:34:18.815 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+22-Feb-2019 09:34:18.819 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\docs has finished in 205 ms
+22-Feb-2019 09:34:18.819 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\examples
+22-Feb-2019 09:34:21.103 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\examples has finished in 2,284 ms
+22-Feb-2019 09:34:21.103 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\host-manager
+22-Feb-2019 09:34:21.371 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+22-Feb-2019 09:34:21.379 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\host-manager has finished in 276 ms
+22-Feb-2019 09:34:21.379 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\manager
+22-Feb-2019 09:34:21.903 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+22-Feb-2019 09:34:21.907 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\manager has finished in 528 ms
+22-Feb-2019 09:34:21.907 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\patelr
+22-Feb-2019 09:34:22.034 SEVERE [localhost-startStop-1] org.apache.tomcat.util.digester.Digester.fatalError Parse Fatal Error at line 40 column 6: The content of elements must consist of well-formed character data or markup.
+ org.xml.sax.SAXParseException; systemId: file:/F:/DC/04/WEBD-Enterprise/d2/Tomcat8.0/webapps/patelr/WEB-INF/web.xml; lineNumber: 40; columnNumber: 6; The content of elements must consist of well-formed character data or markup.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.startOfMarkup(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1457)
+	at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:120)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1107)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:771)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:305)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5053)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:725)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:714)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1069)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1719)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+22-Feb-2019 09:34:22.034 SEVERE [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Parse error in application web.xml file at file:/F:/DC/04/WEBD-Enterprise/d2/Tomcat8.0/webapps/patelr/WEB-INF/web.xml
+ org.xml.sax.SAXParseException; systemId: file:/F:/DC/04/WEBD-Enterprise/d2/Tomcat8.0/webapps/patelr/WEB-INF/web.xml; lineNumber: 40; columnNumber: 6; The content of elements must consist of well-formed character data or markup.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.startOfMarkup(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1457)
+	at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:120)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1107)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:771)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:305)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5053)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:725)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:714)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1069)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1719)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+22-Feb-2019 09:34:22.038 SEVERE [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Occurred at line 40 column 6
+22-Feb-2019 09:34:22.042 SEVERE [localhost-startStop-1] org.apache.catalina.startup.ContextConfig.configureStart Marking this application unavailable due to previous error(s)
+22-Feb-2019 09:34:22.042 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Error getConfigured
+22-Feb-2019 09:34:22.042 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Context [/patelr] startup failed due to previous errors
+22-Feb-2019 09:34:22.086 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\patelr has finished in 179 ms
+22-Feb-2019 09:34:22.090 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\ROOT
+22-Feb-2019 09:34:22.454 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+22-Feb-2019 09:34:22.458 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory F:\DC\04\WEBD-Enterprise\d2\Tomcat8.0\webapps\ROOT has finished in 372 ms
+22-Feb-2019 09:34:22.466 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-apr-8080"]
+22-Feb-2019 09:34:22.478 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8009"]
+22-Feb-2019 09:34:22.482 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 5474 ms
+22-Feb-2019 09:42:02.754 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context [/demo - Copy]
+22-Feb-2019 09:42:02.948 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+22-Feb-2019 09:43:53.149 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context [/demo - Copy]
+22-Feb-2019 09:43:53.149 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/demo - Copy] has started
+22-Feb-2019 09:43:53.366 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+22-Feb-2019 09:43:53.369 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/demo - Copy] is completed
+22-Feb-2019 09:44:03.662 INFO [http-apr-8080-exec-12] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/demo - Copy]] after start() had already been called. The second call will be ignored.
+22-Feb-2019 10:23:24.490 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context [/patelr]
+22-Feb-2019 10:23:24.767 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+22-Feb-2019 10:23:28.538 INFO [http-apr-8080-exec-24] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/patelr]] after start() had already been called. The second call will be ignored.

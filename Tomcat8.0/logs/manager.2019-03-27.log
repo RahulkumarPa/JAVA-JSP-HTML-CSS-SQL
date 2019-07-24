@@ -1,0 +1,1356 @@
+27-Mar-2019 00:47:21.614 INFO [http-apr-8080-exec-3] org.apache.catalina.core.ApplicationContext.log HTMLManager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+27-Mar-2019 00:47:21.615 INFO [http-apr-8080-exec-3] org.apache.catalina.core.ApplicationContext.log HTMLManager: init: Global resources are available
+27-Mar-2019 00:47:38.108 INFO [http-apr-8080-exec-8] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 00:51:11.119 INFO [http-apr-8080-exec-3] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/patelr'
+27-Mar-2019 00:51:11.537 INFO [http-apr-8080-exec-3] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 00:52:02.529 INFO [http-apr-8080-exec-1] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/patelr'
+27-Mar-2019 00:52:02.723 INFO [http-apr-8080-exec-1] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 00:53:20.559 INFO [http-apr-8080-exec-18] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/patelr'
+27-Mar-2019 00:53:20.708 INFO [http-apr-8080-exec-18] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 00:54:51.984 INFO [http-apr-8080-exec-23] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/patelr'
+27-Mar-2019 00:54:52.200 INFO [http-apr-8080-exec-23] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 00:54:55.697 INFO [http-apr-8080-exec-22] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/patelr'
+27-Mar-2019 00:54:55.902 INFO [http-apr-8080-exec-22] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 01:03:31.356 INFO [http-apr-8080-exec-30] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/patelr'
+27-Mar-2019 01:03:31.560 INFO [http-apr-8080-exec-30] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 01:15:00.646 INFO [http-apr-8080-exec-40] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/patelr'
+27-Mar-2019 01:15:00.820 INFO [http-apr-8080-exec-40] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 01:15:02.808 INFO [http-apr-8080-exec-47] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/patelr'
+27-Mar-2019 01:15:02.975 INFO [http-apr-8080-exec-47] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 01:36:08.996 INFO [http-apr-8080-exec-52] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/patelr'
+27-Mar-2019 01:36:09.239 INFO [http-apr-8080-exec-52] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 01:55:03.828 INFO [http-apr-8080-exec-61] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 01:56:34.056 INFO [http-apr-8080-exec-59] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/patelr'
+27-Mar-2019 01:56:34.306 INFO [http-apr-8080-exec-59] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 08:30:55.582 INFO [http-apr-8080-exec-5] org.apache.catalina.core.ApplicationContext.log HTMLManager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+27-Mar-2019 08:30:55.582 INFO [http-apr-8080-exec-5] org.apache.catalina.core.ApplicationContext.log HTMLManager: init: Global resources are available
+27-Mar-2019 08:30:55.642 INFO [http-apr-8080-exec-5] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 08:33:25.773 INFO [http-apr-8080-exec-8] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/patelr'
+27-Mar-2019 08:33:26.105 INFO [http-apr-8080-exec-8] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 08:33:45.095 INFO [http-apr-8080-exec-2] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/patelr'
+27-Mar-2019 08:33:45.095 SEVERE [http-apr-8080-exec-2] org.apache.catalina.core.ApplicationContext.log HTMLManager: ManagerServlet.reload[/patelr]
+ java.lang.IllegalStateException: Context with name [/patelr] has not yet been started
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3728)
+	at org.apache.catalina.manager.ManagerServlet.reload(ManagerServlet.java:1006)
+	at org.apache.catalina.manager.HTMLManagerServlet.reload(HTMLManagerServlet.java:614)
+	at org.apache.catalina.manager.HTMLManagerServlet.doPost(HTMLManagerServlet.java:215)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:644)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.CsrfPreventionFilter.doFilter(CsrfPreventionFilter.java:213)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:613)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+27-Mar-2019 08:33:45.099 INFO [http-apr-8080-exec-2] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 08:33:57.976 INFO [http-apr-8080-exec-5] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 08:34:54.459 INFO [http-apr-8080-exec-13] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 08:34:56.863 INFO [http-apr-8080-exec-15] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 08:35:03.350 INFO [http-apr-8080-exec-18] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 08:35:52.546 INFO [http-apr-8080-exec-15] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 08:37:50.860 INFO [http-apr-8080-exec-11] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 08:40:55.885 INFO [http-apr-8080-exec-13] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 08:41:00.349 INFO [http-apr-8080-exec-17] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 08:41:31.671 INFO [http-apr-8080-exec-11] org.apache.catalina.core.ApplicationContext.log HTMLManager: start: Starting web application '/patelr'
+27-Mar-2019 08:41:31.959 SEVERE [http-apr-8080-exec-11] org.apache.catalina.core.ApplicationContext.log FAIL - Application at context path /patelr could not be started
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/patelr]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	at org.apache.catalina.manager.ManagerServlet.start(ManagerServlet.java:1293)
+	at org.apache.catalina.manager.HTMLManagerServlet.start(HTMLManagerServlet.java:673)
+	at org.apache.catalina.manager.HTMLManagerServlet.doPost(HTMLManagerServlet.java:221)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:644)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.CsrfPreventionFilter.doFilter(CsrfPreventionFilter.java:213)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:613)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NoClassDefFoundError: javax/mail/internet/AddressException
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Unknown Source)
+	at java.lang.Class.getDeclaredFields(Unknown Source)
+	at org.apache.catalina.util.Introspection.getDeclaredFields(Introspection.java:106)
+	at org.apache.catalina.startup.WebAnnotationSet.loadFieldsAnnotation(WebAnnotationSet.java:256)
+	at org.apache.catalina.startup.WebAnnotationSet.loadApplicationServletAnnotations(WebAnnotationSet.java:132)
+	at org.apache.catalina.startup.WebAnnotationSet.loadApplicationAnnotations(WebAnnotationSet.java:65)
+	at org.apache.catalina.startup.ContextConfig.applicationAnnotationsConfig(ContextConfig.java:334)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:774)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:305)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5053)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 33 more
+Caused by: java.lang.ClassNotFoundException: javax.mail.internet.AddressException
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1305)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1157)
+	... 47 more
+
+27-Mar-2019 08:41:31.959 INFO [http-apr-8080-exec-11] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 08:46:06.484 INFO [http-apr-8080-exec-23] org.apache.catalina.core.ApplicationContext.log HTMLManager: start: Starting web application '/patelr'
+27-Mar-2019 08:46:06.652 SEVERE [http-apr-8080-exec-23] org.apache.catalina.core.ApplicationContext.log FAIL - Application at context path /patelr could not be started
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/patelr]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	at org.apache.catalina.manager.ManagerServlet.start(ManagerServlet.java:1293)
+	at org.apache.catalina.manager.HTMLManagerServlet.start(HTMLManagerServlet.java:673)
+	at org.apache.catalina.manager.HTMLManagerServlet.doPost(HTMLManagerServlet.java:221)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:644)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.CsrfPreventionFilter.doFilter(CsrfPreventionFilter.java:213)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:613)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NoClassDefFoundError: javax/mail/internet/AddressException
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Unknown Source)
+	at java.lang.Class.getDeclaredFields(Unknown Source)
+	at org.apache.catalina.util.Introspection.getDeclaredFields(Introspection.java:106)
+	at org.apache.catalina.startup.WebAnnotationSet.loadFieldsAnnotation(WebAnnotationSet.java:256)
+	at org.apache.catalina.startup.WebAnnotationSet.loadApplicationServletAnnotations(WebAnnotationSet.java:132)
+	at org.apache.catalina.startup.WebAnnotationSet.loadApplicationAnnotations(WebAnnotationSet.java:65)
+	at org.apache.catalina.startup.ContextConfig.applicationAnnotationsConfig(ContextConfig.java:334)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:774)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:305)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5053)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 33 more
+Caused by: java.lang.ClassNotFoundException: javax.mail.internet.AddressException
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1305)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1157)
+	... 47 more
+
+27-Mar-2019 08:46:06.652 INFO [http-apr-8080-exec-23] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 08:46:12.054 INFO [http-apr-8080-exec-18] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/demo - Copy'
+27-Mar-2019 08:46:12.054 SEVERE [http-apr-8080-exec-18] org.apache.catalina.core.ApplicationContext.log HTMLManager: ManagerServlet.reload[/demo - Copy]
+ java.lang.IllegalStateException: Context with name [/demo - Copy] has not yet been started
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3728)
+	at org.apache.catalina.manager.ManagerServlet.reload(ManagerServlet.java:1006)
+	at org.apache.catalina.manager.HTMLManagerServlet.reload(HTMLManagerServlet.java:614)
+	at org.apache.catalina.manager.HTMLManagerServlet.doPost(HTMLManagerServlet.java:215)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:644)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.CsrfPreventionFilter.doFilter(CsrfPreventionFilter.java:213)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:613)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+27-Mar-2019 08:46:12.054 INFO [http-apr-8080-exec-18] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 08:47:07.199 INFO [http-apr-8080-exec-20] org.apache.catalina.core.ApplicationContext.log HTMLManager: start: Starting web application '/demo - Copy'
+27-Mar-2019 08:47:07.375 INFO [http-apr-8080-exec-20] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 08:47:12.577 INFO [http-apr-8080-exec-20] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/demo - Copy'
+27-Mar-2019 08:47:12.689 INFO [http-apr-8080-exec-20] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 08:48:09.181 INFO [http-apr-8080-exec-25] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/demo - Copy'
+27-Mar-2019 08:48:09.181 SEVERE [http-apr-8080-exec-25] org.apache.catalina.core.ApplicationContext.log HTMLManager: ManagerServlet.reload[/demo - Copy]
+ java.lang.IllegalStateException: Context with name [/demo - Copy] has not yet been started
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3728)
+	at org.apache.catalina.manager.ManagerServlet.reload(ManagerServlet.java:1006)
+	at org.apache.catalina.manager.HTMLManagerServlet.reload(HTMLManagerServlet.java:614)
+	at org.apache.catalina.manager.HTMLManagerServlet.doPost(HTMLManagerServlet.java:215)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:644)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.CsrfPreventionFilter.doFilter(CsrfPreventionFilter.java:213)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:613)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+27-Mar-2019 08:48:09.181 INFO [http-apr-8080-exec-25] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 08:48:14.061 INFO [http-apr-8080-exec-29] org.apache.catalina.core.ApplicationContext.log HTMLManager: start: Starting web application '/demo - Copy'
+27-Mar-2019 08:48:14.157 SEVERE [http-apr-8080-exec-29] org.apache.catalina.core.ApplicationContext.log FAIL - Application at context path /demo - Copy could not be started
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/demo - Copy]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	at org.apache.catalina.manager.ManagerServlet.start(ManagerServlet.java:1293)
+	at org.apache.catalina.manager.HTMLManagerServlet.start(HTMLManagerServlet.java:673)
+	at org.apache.catalina.manager.HTMLManagerServlet.doPost(HTMLManagerServlet.java:221)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:644)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.CsrfPreventionFilter.doFilter(CsrfPreventionFilter.java:213)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:613)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NoClassDefFoundError: javax/mail/internet/AddressException
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Unknown Source)
+	at java.lang.Class.getDeclaredFields(Unknown Source)
+	at org.apache.catalina.util.Introspection.getDeclaredFields(Introspection.java:106)
+	at org.apache.catalina.startup.WebAnnotationSet.loadFieldsAnnotation(WebAnnotationSet.java:256)
+	at org.apache.catalina.startup.WebAnnotationSet.loadApplicationServletAnnotations(WebAnnotationSet.java:132)
+	at org.apache.catalina.startup.WebAnnotationSet.loadApplicationAnnotations(WebAnnotationSet.java:65)
+	at org.apache.catalina.startup.ContextConfig.applicationAnnotationsConfig(ContextConfig.java:334)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:774)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:305)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5053)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 33 more
+Caused by: java.lang.ClassNotFoundException: javax.mail.internet.AddressException
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1305)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1157)
+	... 47 more
+
+27-Mar-2019 08:48:14.157 INFO [http-apr-8080-exec-29] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 08:48:59.022 INFO [http-apr-8080-exec-12] org.apache.catalina.core.ApplicationContext.log HTMLManager: start: Starting web application '/demo - Copy'
+27-Mar-2019 08:48:59.174 SEVERE [http-apr-8080-exec-12] org.apache.catalina.core.ApplicationContext.log FAIL - Application at context path /demo - Copy could not be started
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/demo - Copy]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	at org.apache.catalina.manager.ManagerServlet.start(ManagerServlet.java:1293)
+	at org.apache.catalina.manager.HTMLManagerServlet.start(HTMLManagerServlet.java:673)
+	at org.apache.catalina.manager.HTMLManagerServlet.doPost(HTMLManagerServlet.java:221)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:644)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.CsrfPreventionFilter.doFilter(CsrfPreventionFilter.java:213)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:613)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NoClassDefFoundError: javax/mail/internet/AddressException
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Unknown Source)
+	at java.lang.Class.getDeclaredFields(Unknown Source)
+	at org.apache.catalina.util.Introspection.getDeclaredFields(Introspection.java:106)
+	at org.apache.catalina.startup.WebAnnotationSet.loadFieldsAnnotation(WebAnnotationSet.java:256)
+	at org.apache.catalina.startup.WebAnnotationSet.loadApplicationServletAnnotations(WebAnnotationSet.java:132)
+	at org.apache.catalina.startup.WebAnnotationSet.loadApplicationAnnotations(WebAnnotationSet.java:65)
+	at org.apache.catalina.startup.ContextConfig.applicationAnnotationsConfig(ContextConfig.java:334)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:774)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:305)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5053)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 33 more
+Caused by: java.lang.ClassNotFoundException: javax.mail.internet.AddressException
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1305)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1157)
+	... 47 more
+
+27-Mar-2019 08:48:59.174 INFO [http-apr-8080-exec-12] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 08:49:40.787 INFO [http-apr-8080-exec-12] org.apache.catalina.core.ApplicationContext.log HTMLManager: start: Starting web application '/demo - Copy'
+27-Mar-2019 08:49:40.887 SEVERE [http-apr-8080-exec-12] org.apache.catalina.core.ApplicationContext.log FAIL - Application at context path /demo - Copy could not be started
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/demo - Copy]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	at org.apache.catalina.manager.ManagerServlet.start(ManagerServlet.java:1293)
+	at org.apache.catalina.manager.HTMLManagerServlet.start(HTMLManagerServlet.java:673)
+	at org.apache.catalina.manager.HTMLManagerServlet.doPost(HTMLManagerServlet.java:221)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:644)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.CsrfPreventionFilter.doFilter(CsrfPreventionFilter.java:213)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:613)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NoClassDefFoundError: javax/mail/internet/AddressException
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Unknown Source)
+	at java.lang.Class.getDeclaredFields(Unknown Source)
+	at org.apache.catalina.util.Introspection.getDeclaredFields(Introspection.java:106)
+	at org.apache.catalina.startup.WebAnnotationSet.loadFieldsAnnotation(WebAnnotationSet.java:256)
+	at org.apache.catalina.startup.WebAnnotationSet.loadApplicationServletAnnotations(WebAnnotationSet.java:132)
+	at org.apache.catalina.startup.WebAnnotationSet.loadApplicationAnnotations(WebAnnotationSet.java:65)
+	at org.apache.catalina.startup.ContextConfig.applicationAnnotationsConfig(ContextConfig.java:334)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:774)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:305)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5053)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 33 more
+Caused by: java.lang.ClassNotFoundException: javax.mail.internet.AddressException
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1305)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1157)
+	... 47 more
+
+27-Mar-2019 08:49:40.887 INFO [http-apr-8080-exec-12] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 08:50:23.794 INFO [http-apr-8080-exec-27] org.apache.catalina.core.ApplicationContext.log HTMLManager: start: Starting web application '/demo - Copy'
+27-Mar-2019 08:50:23.962 SEVERE [http-apr-8080-exec-27] org.apache.catalina.core.ApplicationContext.log FAIL - Application at context path /demo - Copy could not be started
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/demo - Copy]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	at org.apache.catalina.manager.ManagerServlet.start(ManagerServlet.java:1293)
+	at org.apache.catalina.manager.HTMLManagerServlet.start(HTMLManagerServlet.java:673)
+	at org.apache.catalina.manager.HTMLManagerServlet.doPost(HTMLManagerServlet.java:221)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:644)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.CsrfPreventionFilter.doFilter(CsrfPreventionFilter.java:213)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:613)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NoClassDefFoundError: javax/mail/internet/AddressException
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Unknown Source)
+	at java.lang.Class.getDeclaredFields(Unknown Source)
+	at org.apache.catalina.util.Introspection.getDeclaredFields(Introspection.java:106)
+	at org.apache.catalina.startup.WebAnnotationSet.loadFieldsAnnotation(WebAnnotationSet.java:256)
+	at org.apache.catalina.startup.WebAnnotationSet.loadApplicationServletAnnotations(WebAnnotationSet.java:132)
+	at org.apache.catalina.startup.WebAnnotationSet.loadApplicationAnnotations(WebAnnotationSet.java:65)
+	at org.apache.catalina.startup.ContextConfig.applicationAnnotationsConfig(ContextConfig.java:334)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:774)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:305)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5053)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 33 more
+Caused by: java.lang.ClassNotFoundException: javax.mail.internet.AddressException
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1305)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1157)
+	... 47 more
+
+27-Mar-2019 08:50:23.962 INFO [http-apr-8080-exec-27] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 08:50:26.716 INFO [http-apr-8080-exec-12] org.apache.catalina.core.ApplicationContext.log HTMLManager: start: Starting web application '/demo - Copy'
+27-Mar-2019 08:50:26.804 SEVERE [http-apr-8080-exec-12] org.apache.catalina.core.ApplicationContext.log FAIL - Application at context path /demo - Copy could not be started
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/demo - Copy]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	at org.apache.catalina.manager.ManagerServlet.start(ManagerServlet.java:1293)
+	at org.apache.catalina.manager.HTMLManagerServlet.start(HTMLManagerServlet.java:673)
+	at org.apache.catalina.manager.HTMLManagerServlet.doPost(HTMLManagerServlet.java:221)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:644)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.CsrfPreventionFilter.doFilter(CsrfPreventionFilter.java:213)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:613)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NoClassDefFoundError: javax/mail/internet/AddressException
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Unknown Source)
+	at java.lang.Class.getDeclaredFields(Unknown Source)
+	at org.apache.catalina.util.Introspection.getDeclaredFields(Introspection.java:106)
+	at org.apache.catalina.startup.WebAnnotationSet.loadFieldsAnnotation(WebAnnotationSet.java:256)
+	at org.apache.catalina.startup.WebAnnotationSet.loadApplicationServletAnnotations(WebAnnotationSet.java:132)
+	at org.apache.catalina.startup.WebAnnotationSet.loadApplicationAnnotations(WebAnnotationSet.java:65)
+	at org.apache.catalina.startup.ContextConfig.applicationAnnotationsConfig(ContextConfig.java:334)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:774)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:305)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5053)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 33 more
+Caused by: java.lang.ClassNotFoundException: javax.mail.internet.AddressException
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1305)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1157)
+	... 47 more
+
+27-Mar-2019 08:50:26.804 INFO [http-apr-8080-exec-12] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 08:51:34.996 INFO [http-apr-8080-exec-26] org.apache.catalina.core.ApplicationContext.log HTMLManager: start: Starting web application '/demo - Copy'
+27-Mar-2019 08:51:35.156 SEVERE [http-apr-8080-exec-26] org.apache.catalina.core.ApplicationContext.log FAIL - Application at context path /demo - Copy could not be started
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/demo - Copy]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	at org.apache.catalina.manager.ManagerServlet.start(ManagerServlet.java:1293)
+	at org.apache.catalina.manager.HTMLManagerServlet.start(HTMLManagerServlet.java:673)
+	at org.apache.catalina.manager.HTMLManagerServlet.doPost(HTMLManagerServlet.java:221)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:644)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.CsrfPreventionFilter.doFilter(CsrfPreventionFilter.java:213)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:613)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NoClassDefFoundError: javax/mail/internet/AddressException
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Unknown Source)
+	at java.lang.Class.getDeclaredFields(Unknown Source)
+	at org.apache.catalina.util.Introspection.getDeclaredFields(Introspection.java:106)
+	at org.apache.catalina.startup.WebAnnotationSet.loadFieldsAnnotation(WebAnnotationSet.java:256)
+	at org.apache.catalina.startup.WebAnnotationSet.loadApplicationServletAnnotations(WebAnnotationSet.java:132)
+	at org.apache.catalina.startup.WebAnnotationSet.loadApplicationAnnotations(WebAnnotationSet.java:65)
+	at org.apache.catalina.startup.ContextConfig.applicationAnnotationsConfig(ContextConfig.java:334)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:774)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:305)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5053)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 33 more
+Caused by: java.lang.ClassNotFoundException: javax.mail.internet.AddressException
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1305)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1157)
+	... 47 more
+
+27-Mar-2019 08:51:35.156 INFO [http-apr-8080-exec-26] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 08:51:37.280 INFO [http-apr-8080-exec-35] org.apache.catalina.core.ApplicationContext.log HTMLManager: start: Starting web application '/demo - Copy'
+27-Mar-2019 08:51:37.360 SEVERE [http-apr-8080-exec-35] org.apache.catalina.core.ApplicationContext.log FAIL - Application at context path /demo - Copy could not be started
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/demo - Copy]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	at org.apache.catalina.manager.ManagerServlet.start(ManagerServlet.java:1293)
+	at org.apache.catalina.manager.HTMLManagerServlet.start(HTMLManagerServlet.java:673)
+	at org.apache.catalina.manager.HTMLManagerServlet.doPost(HTMLManagerServlet.java:221)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:644)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.CsrfPreventionFilter.doFilter(CsrfPreventionFilter.java:213)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:613)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NoClassDefFoundError: javax/mail/internet/AddressException
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Unknown Source)
+	at java.lang.Class.getDeclaredFields(Unknown Source)
+	at org.apache.catalina.util.Introspection.getDeclaredFields(Introspection.java:106)
+	at org.apache.catalina.startup.WebAnnotationSet.loadFieldsAnnotation(WebAnnotationSet.java:256)
+	at org.apache.catalina.startup.WebAnnotationSet.loadApplicationServletAnnotations(WebAnnotationSet.java:132)
+	at org.apache.catalina.startup.WebAnnotationSet.loadApplicationAnnotations(WebAnnotationSet.java:65)
+	at org.apache.catalina.startup.ContextConfig.applicationAnnotationsConfig(ContextConfig.java:334)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:774)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:305)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5053)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 33 more
+Caused by: java.lang.ClassNotFoundException: javax.mail.internet.AddressException
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1305)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1157)
+	... 47 more
+
+27-Mar-2019 08:51:37.360 INFO [http-apr-8080-exec-35] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 08:52:51.345 INFO [http-apr-8080-exec-31] org.apache.catalina.core.ApplicationContext.log HTMLManager: start: Starting web application '/demo - Copy'
+27-Mar-2019 08:52:51.345 INFO [http-apr-8080-exec-31] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 08:54:21.649 INFO [http-apr-8080-exec-26] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/demo - Copy'
+27-Mar-2019 08:54:21.649 SEVERE [http-apr-8080-exec-26] org.apache.catalina.core.ApplicationContext.log HTMLManager: ManagerServlet.reload[/demo - Copy]
+ java.lang.IllegalStateException: Context with name [/demo - Copy] has not yet been started
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3728)
+	at org.apache.catalina.manager.ManagerServlet.reload(ManagerServlet.java:1006)
+	at org.apache.catalina.manager.HTMLManagerServlet.reload(HTMLManagerServlet.java:614)
+	at org.apache.catalina.manager.HTMLManagerServlet.doPost(HTMLManagerServlet.java:215)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:644)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.CsrfPreventionFilter.doFilter(CsrfPreventionFilter.java:213)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:613)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+27-Mar-2019 08:54:21.649 INFO [http-apr-8080-exec-26] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 08:56:34.109 INFO [http-apr-8080-exec-43] org.apache.catalina.core.ApplicationContext.log HTMLManager: start: Starting web application '/demo - Copy'
+27-Mar-2019 08:56:34.245 SEVERE [http-apr-8080-exec-43] org.apache.catalina.core.ApplicationContext.log FAIL - Application at context path /demo - Copy could not be started
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/demo - Copy]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	at org.apache.catalina.manager.ManagerServlet.start(ManagerServlet.java:1293)
+	at org.apache.catalina.manager.HTMLManagerServlet.start(HTMLManagerServlet.java:673)
+	at org.apache.catalina.manager.HTMLManagerServlet.doPost(HTMLManagerServlet.java:221)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:644)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.CsrfPreventionFilter.doFilter(CsrfPreventionFilter.java:213)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:613)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NoClassDefFoundError: javax/mail/internet/AddressException
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Unknown Source)
+	at java.lang.Class.getDeclaredFields(Unknown Source)
+	at org.apache.catalina.util.Introspection.getDeclaredFields(Introspection.java:106)
+	at org.apache.catalina.startup.WebAnnotationSet.loadFieldsAnnotation(WebAnnotationSet.java:256)
+	at org.apache.catalina.startup.WebAnnotationSet.loadApplicationServletAnnotations(WebAnnotationSet.java:132)
+	at org.apache.catalina.startup.WebAnnotationSet.loadApplicationAnnotations(WebAnnotationSet.java:65)
+	at org.apache.catalina.startup.ContextConfig.applicationAnnotationsConfig(ContextConfig.java:334)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:774)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:305)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5053)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 33 more
+Caused by: java.lang.ClassNotFoundException: javax.mail.internet.AddressException
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1305)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1157)
+	... 47 more
+
+27-Mar-2019 08:56:34.245 INFO [http-apr-8080-exec-43] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 08:57:08.056 INFO [http-apr-8080-exec-28] org.apache.catalina.core.ApplicationContext.log HTMLManager: start: Starting web application '/patelr'
+27-Mar-2019 08:57:08.188 SEVERE [http-apr-8080-exec-28] org.apache.catalina.core.ApplicationContext.log FAIL - Application at context path /patelr could not be started
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/patelr]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	at org.apache.catalina.manager.ManagerServlet.start(ManagerServlet.java:1293)
+	at org.apache.catalina.manager.HTMLManagerServlet.start(HTMLManagerServlet.java:673)
+	at org.apache.catalina.manager.HTMLManagerServlet.doPost(HTMLManagerServlet.java:221)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:644)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.CsrfPreventionFilter.doFilter(CsrfPreventionFilter.java:213)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:613)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NoClassDefFoundError: javax/mail/internet/AddressException
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Unknown Source)
+	at java.lang.Class.getDeclaredFields(Unknown Source)
+	at org.apache.catalina.util.Introspection.getDeclaredFields(Introspection.java:106)
+	at org.apache.catalina.startup.WebAnnotationSet.loadFieldsAnnotation(WebAnnotationSet.java:256)
+	at org.apache.catalina.startup.WebAnnotationSet.loadApplicationServletAnnotations(WebAnnotationSet.java:132)
+	at org.apache.catalina.startup.WebAnnotationSet.loadApplicationAnnotations(WebAnnotationSet.java:65)
+	at org.apache.catalina.startup.ContextConfig.applicationAnnotationsConfig(ContextConfig.java:334)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:774)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:305)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5053)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 33 more
+Caused by: java.lang.ClassNotFoundException: javax.mail.internet.AddressException
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1305)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1157)
+	... 47 more
+
+27-Mar-2019 08:57:08.188 INFO [http-apr-8080-exec-28] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 09:01:37.400 INFO [http-apr-8080-exec-28] org.apache.catalina.core.ApplicationContext.log HTMLManager: start: Starting web application '/patelr'
+27-Mar-2019 09:01:37.532 SEVERE [http-apr-8080-exec-28] org.apache.catalina.core.ApplicationContext.log FAIL - Application at context path /patelr could not be started
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/patelr]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	at org.apache.catalina.manager.ManagerServlet.start(ManagerServlet.java:1293)
+	at org.apache.catalina.manager.HTMLManagerServlet.start(HTMLManagerServlet.java:673)
+	at org.apache.catalina.manager.HTMLManagerServlet.doPost(HTMLManagerServlet.java:221)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:644)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.CsrfPreventionFilter.doFilter(CsrfPreventionFilter.java:213)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:613)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NoClassDefFoundError: javax/mail/internet/AddressException
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Unknown Source)
+	at java.lang.Class.getDeclaredFields(Unknown Source)
+	at org.apache.catalina.util.Introspection.getDeclaredFields(Introspection.java:106)
+	at org.apache.catalina.startup.WebAnnotationSet.loadFieldsAnnotation(WebAnnotationSet.java:256)
+	at org.apache.catalina.startup.WebAnnotationSet.loadApplicationServletAnnotations(WebAnnotationSet.java:132)
+	at org.apache.catalina.startup.WebAnnotationSet.loadApplicationAnnotations(WebAnnotationSet.java:65)
+	at org.apache.catalina.startup.ContextConfig.applicationAnnotationsConfig(ContextConfig.java:334)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:774)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:305)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5053)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 33 more
+Caused by: java.lang.ClassNotFoundException: javax.mail.internet.AddressException
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1305)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1157)
+	... 47 more
+
+27-Mar-2019 09:01:37.532 INFO [http-apr-8080-exec-28] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 09:01:40.461 INFO [http-apr-8080-exec-31] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/demo - Copy'
+27-Mar-2019 09:01:40.677 INFO [http-apr-8080-exec-31] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 09:02:20.771 INFO [http-apr-8080-exec-44] org.apache.catalina.core.ApplicationContext.log HTMLManager: start: Starting web application '/patelr'
+27-Mar-2019 09:02:20.911 SEVERE [http-apr-8080-exec-44] org.apache.catalina.core.ApplicationContext.log FAIL - Application at context path /patelr could not be started
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/patelr]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	at org.apache.catalina.manager.ManagerServlet.start(ManagerServlet.java:1293)
+	at org.apache.catalina.manager.HTMLManagerServlet.start(HTMLManagerServlet.java:673)
+	at org.apache.catalina.manager.HTMLManagerServlet.doPost(HTMLManagerServlet.java:221)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:644)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.CsrfPreventionFilter.doFilter(CsrfPreventionFilter.java:213)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:613)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NoClassDefFoundError: javax/mail/internet/AddressException
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Unknown Source)
+	at java.lang.Class.getDeclaredFields(Unknown Source)
+	at org.apache.catalina.util.Introspection.getDeclaredFields(Introspection.java:106)
+	at org.apache.catalina.startup.WebAnnotationSet.loadFieldsAnnotation(WebAnnotationSet.java:256)
+	at org.apache.catalina.startup.WebAnnotationSet.loadApplicationServletAnnotations(WebAnnotationSet.java:132)
+	at org.apache.catalina.startup.WebAnnotationSet.loadApplicationAnnotations(WebAnnotationSet.java:65)
+	at org.apache.catalina.startup.ContextConfig.applicationAnnotationsConfig(ContextConfig.java:334)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:774)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:305)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5053)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 33 more
+Caused by: java.lang.ClassNotFoundException: javax.mail.internet.AddressException
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1305)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1157)
+	... 47 more
+
+27-Mar-2019 09:02:20.911 INFO [http-apr-8080-exec-44] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 09:02:57.071 INFO [http-apr-8080-exec-48] org.apache.catalina.core.ApplicationContext.log HTMLManager: start: Starting web application '/patelr'
+27-Mar-2019 09:02:57.226 SEVERE [http-apr-8080-exec-48] org.apache.catalina.core.ApplicationContext.log FAIL - Application at context path /patelr could not be started
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/patelr]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	at org.apache.catalina.manager.ManagerServlet.start(ManagerServlet.java:1293)
+	at org.apache.catalina.manager.HTMLManagerServlet.start(HTMLManagerServlet.java:673)
+	at org.apache.catalina.manager.HTMLManagerServlet.doPost(HTMLManagerServlet.java:221)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:644)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.CsrfPreventionFilter.doFilter(CsrfPreventionFilter.java:213)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:613)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NoClassDefFoundError: javax/mail/internet/AddressException
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Unknown Source)
+	at java.lang.Class.getDeclaredFields(Unknown Source)
+	at org.apache.catalina.util.Introspection.getDeclaredFields(Introspection.java:106)
+	at org.apache.catalina.startup.WebAnnotationSet.loadFieldsAnnotation(WebAnnotationSet.java:256)
+	at org.apache.catalina.startup.WebAnnotationSet.loadApplicationServletAnnotations(WebAnnotationSet.java:132)
+	at org.apache.catalina.startup.WebAnnotationSet.loadApplicationAnnotations(WebAnnotationSet.java:65)
+	at org.apache.catalina.startup.ContextConfig.applicationAnnotationsConfig(ContextConfig.java:334)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:774)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:305)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5053)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 33 more
+Caused by: java.lang.ClassNotFoundException: javax.mail.internet.AddressException
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1305)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1157)
+	... 47 more
+
+27-Mar-2019 09:02:57.226 INFO [http-apr-8080-exec-48] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 09:03:12.699 INFO [http-apr-8080-exec-52] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/new'
+27-Mar-2019 09:03:12.699 SEVERE [http-apr-8080-exec-52] org.apache.catalina.core.ApplicationContext.log HTMLManager: ManagerServlet.reload[/new]
+ java.lang.IllegalStateException: Context with name [/new] has not yet been started
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3728)
+	at org.apache.catalina.manager.ManagerServlet.reload(ManagerServlet.java:1006)
+	at org.apache.catalina.manager.HTMLManagerServlet.reload(HTMLManagerServlet.java:614)
+	at org.apache.catalina.manager.HTMLManagerServlet.doPost(HTMLManagerServlet.java:215)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:644)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.CsrfPreventionFilter.doFilter(CsrfPreventionFilter.java:213)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:613)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+27-Mar-2019 09:03:12.699 INFO [http-apr-8080-exec-52] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 09:05:46.406 INFO [http-apr-8080-exec-59] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/new'
+27-Mar-2019 09:05:46.406 SEVERE [http-apr-8080-exec-59] org.apache.catalina.core.ApplicationContext.log HTMLManager: ManagerServlet.reload[/new]
+ java.lang.IllegalStateException: Context with name [/new] has not yet been started
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3728)
+	at org.apache.catalina.manager.ManagerServlet.reload(ManagerServlet.java:1006)
+	at org.apache.catalina.manager.HTMLManagerServlet.reload(HTMLManagerServlet.java:614)
+	at org.apache.catalina.manager.HTMLManagerServlet.doPost(HTMLManagerServlet.java:215)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:644)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.CsrfPreventionFilter.doFilter(CsrfPreventionFilter.java:213)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:613)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+27-Mar-2019 09:05:46.406 INFO [http-apr-8080-exec-59] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 09:05:50.468 INFO [http-apr-8080-exec-55] org.apache.catalina.core.ApplicationContext.log HTMLManager: start: Starting web application '/new'
+27-Mar-2019 09:05:50.624 SEVERE [http-apr-8080-exec-55] org.apache.catalina.core.ApplicationContext.log FAIL - Application at context path /new could not be started
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/new]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	at org.apache.catalina.manager.ManagerServlet.start(ManagerServlet.java:1293)
+	at org.apache.catalina.manager.HTMLManagerServlet.start(HTMLManagerServlet.java:673)
+	at org.apache.catalina.manager.HTMLManagerServlet.doPost(HTMLManagerServlet.java:221)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:644)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.CsrfPreventionFilter.doFilter(CsrfPreventionFilter.java:213)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:613)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:516)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1086)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:659)
+	at org.apache.coyote.http11.Http11AprProtocol$Http11ConnectionHandler.process(Http11AprProtocol.java:285)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2431)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2420)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NoClassDefFoundError: javax/mail/internet/AddressException
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Unknown Source)
+	at java.lang.Class.getDeclaredFields(Unknown Source)
+	at org.apache.catalina.util.Introspection.getDeclaredFields(Introspection.java:106)
+	at org.apache.catalina.startup.WebAnnotationSet.loadFieldsAnnotation(WebAnnotationSet.java:256)
+	at org.apache.catalina.startup.WebAnnotationSet.loadApplicationServletAnnotations(WebAnnotationSet.java:132)
+	at org.apache.catalina.startup.WebAnnotationSet.loadApplicationAnnotations(WebAnnotationSet.java:65)
+	at org.apache.catalina.startup.ContextConfig.applicationAnnotationsConfig(ContextConfig.java:334)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:774)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:305)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5053)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 33 more
+Caused by: java.lang.ClassNotFoundException: javax.mail.internet.AddressException
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1305)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1157)
+	... 47 more
+
+27-Mar-2019 09:05:50.624 INFO [http-apr-8080-exec-55] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 09:10:05.151 INFO [http-apr-8080-exec-66] org.apache.catalina.core.ApplicationContext.log HTMLManager: start: Starting web application '/new'
+27-Mar-2019 09:10:05.287 INFO [http-apr-8080-exec-66] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 09:10:11.983 INFO [http-apr-8080-exec-65] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/new'
+27-Mar-2019 09:10:12.083 INFO [http-apr-8080-exec-65] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 09:15:12.469 INFO [http-apr-8080-exec-72] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/new'
+27-Mar-2019 09:15:12.645 INFO [http-apr-8080-exec-72] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 09:22:16.869 INFO [http-apr-8080-exec-82] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/new'
+27-Mar-2019 09:22:17.025 INFO [http-apr-8080-exec-82] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 09:22:20.585 INFO [http-apr-8080-exec-81] org.apache.catalina.core.ApplicationContext.log HTMLManager: start: Starting web application '/patelr'
+27-Mar-2019 09:22:20.732 INFO [http-apr-8080-exec-81] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 09:26:35.072 INFO [http-apr-8080-exec-92] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/patelr'
+27-Mar-2019 09:26:35.272 INFO [http-apr-8080-exec-92] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 09:28:07.696 INFO [http-apr-8080-exec-103] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/patelr'
+27-Mar-2019 09:28:07.879 INFO [http-apr-8080-exec-103] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 09:31:24.058 INFO [http-apr-8080-exec-109] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/patelr'
+27-Mar-2019 09:31:24.354 INFO [http-apr-8080-exec-109] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 09:34:53.365 INFO [http-apr-8080-exec-117] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/patelr'
+27-Mar-2019 09:34:53.582 INFO [http-apr-8080-exec-117] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 09:36:32.108 INFO [http-apr-8080-exec-130] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/patelr'
+27-Mar-2019 09:36:32.308 INFO [http-apr-8080-exec-130] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 09:40:14.270 INFO [http-apr-8080-exec-138] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/patelr'
+27-Mar-2019 09:40:14.477 INFO [http-apr-8080-exec-138] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 09:46:15.012 INFO [http-apr-8080-exec-151] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/patelr'
+27-Mar-2019 09:46:15.185 INFO [http-apr-8080-exec-151] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 09:47:36.104 INFO [http-apr-8080-exec-147] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/patelr'
+27-Mar-2019 09:47:36.279 INFO [http-apr-8080-exec-147] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 09:52:18.786 INFO [http-apr-8080-exec-167] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/patelr'
+27-Mar-2019 09:52:18.959 INFO [http-apr-8080-exec-167] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 09:56:47.829 INFO [http-apr-8080-exec-173] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/patelr'
+27-Mar-2019 09:56:48.002 INFO [http-apr-8080-exec-173] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 10:20:05.136 INFO [http-apr-8080-exec-186] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/patelr'
+27-Mar-2019 10:20:05.272 INFO [http-apr-8080-exec-186] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 10:20:09.398 INFO [http-apr-8080-exec-187] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/patelr'
+27-Mar-2019 10:20:09.538 INFO [http-apr-8080-exec-187] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 10:24:50.127 INFO [http-apr-8080-exec-195] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/patelr'
+27-Mar-2019 10:24:50.283 INFO [http-apr-8080-exec-195] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 10:36:27.649 INFO [http-apr-8080-exec-208] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/patelr'
+27-Mar-2019 10:36:27.813 INFO [http-apr-8080-exec-208] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 10:42:57.071 INFO [http-apr-8080-exec-219] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/patelr'
+27-Mar-2019 10:42:57.235 INFO [http-apr-8080-exec-219] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 10:49:21.576 INFO [http-apr-8080-exec-230] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/patelr'
+27-Mar-2019 10:49:21.739 INFO [http-apr-8080-exec-230] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 10:52:28.980 INFO [http-apr-8080-exec-5] org.apache.catalina.core.ApplicationContext.log HTMLManager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+27-Mar-2019 10:52:28.980 INFO [http-apr-8080-exec-5] org.apache.catalina.core.ApplicationContext.log HTMLManager: init: Global resources are available
+27-Mar-2019 10:54:31.883 INFO [http-apr-8080-exec-4] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 10:54:34.632 INFO [http-apr-8080-exec-6] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/patelr'
+27-Mar-2019 10:54:34.992 INFO [http-apr-8080-exec-6] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 11:56:19.682 INFO [http-apr-8080-exec-6] org.apache.catalina.core.ApplicationContext.log HTMLManager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+27-Mar-2019 11:56:19.683 INFO [http-apr-8080-exec-6] org.apache.catalina.core.ApplicationContext.log HTMLManager: init: Global resources are available
+27-Mar-2019 11:56:19.698 INFO [http-apr-8080-exec-6] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 12:19:47.477 INFO [http-apr-8080-exec-3] org.apache.catalina.core.ApplicationContext.log HTMLManager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+27-Mar-2019 12:19:47.477 INFO [http-apr-8080-exec-3] org.apache.catalina.core.ApplicationContext.log HTMLManager: init: Global resources are available
+27-Mar-2019 12:19:47.481 INFO [http-apr-8080-exec-3] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 12:21:56.600 INFO [http-apr-8080-exec-4] org.apache.catalina.core.ApplicationContext.log HTMLManager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+27-Mar-2019 12:21:56.601 INFO [http-apr-8080-exec-4] org.apache.catalina.core.ApplicationContext.log HTMLManager: init: Global resources are available
+27-Mar-2019 12:21:56.637 INFO [http-apr-8080-exec-4] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 12:29:41.633 INFO [http-apr-8080-exec-8] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 12:29:44.907 INFO [http-apr-8080-exec-4] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/new'
+27-Mar-2019 12:29:45.146 INFO [http-apr-8080-exec-4] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 12:30:46.191 INFO [http-apr-8080-exec-18] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/patelr'
+27-Mar-2019 12:30:46.494 INFO [http-apr-8080-exec-18] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 12:32:02.748 INFO [http-apr-8080-exec-23] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/patelr'
+27-Mar-2019 12:32:02.961 INFO [http-apr-8080-exec-23] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 12:32:04.859 INFO [http-apr-8080-exec-29] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/patelr'
+27-Mar-2019 12:32:05.005 INFO [http-apr-8080-exec-29] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 12:39:00.025 INFO [http-apr-8080-exec-34] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/patelr'
+27-Mar-2019 12:39:00.219 INFO [http-apr-8080-exec-34] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 12:39:01.339 INFO [http-apr-8080-exec-37] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/patelr'
+27-Mar-2019 12:39:01.563 INFO [http-apr-8080-exec-37] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 12:39:49.266 INFO [http-apr-8080-exec-38] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/patelr'
+27-Mar-2019 12:39:49.432 INFO [http-apr-8080-exec-38] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 12:42:58.719 INFO [http-apr-8080-exec-51] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/patelr'
+27-Mar-2019 12:42:58.933 INFO [http-apr-8080-exec-51] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 12:43:01.171 INFO [http-apr-8080-exec-50] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/gg'
+27-Mar-2019 12:43:01.322 INFO [http-apr-8080-exec-50] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 12:44:29.728 INFO [http-apr-8080-exec-62] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/patelr'
+27-Mar-2019 12:44:29.971 INFO [http-apr-8080-exec-62] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 12:47:11.406 INFO [http-apr-8080-exec-74] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/patelr'
+27-Mar-2019 12:47:11.569 INFO [http-apr-8080-exec-74] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 12:47:13.380 INFO [http-apr-8080-exec-78] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/patelr'
+27-Mar-2019 12:47:13.543 INFO [http-apr-8080-exec-78] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 12:47:16.465 INFO [http-apr-8080-exec-71] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/gg'
+27-Mar-2019 12:47:16.613 INFO [http-apr-8080-exec-71] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 12:50:40.503 INFO [http-apr-8080-exec-83] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/patelr'
+27-Mar-2019 12:50:40.654 INFO [http-apr-8080-exec-83] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 12:58:03.405 INFO [http-apr-8080-exec-96] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/patelr'
+27-Mar-2019 12:58:03.624 INFO [http-apr-8080-exec-96] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 12:59:23.845 INFO [http-apr-8080-exec-103] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/patelr'
+27-Mar-2019 12:59:23.989 INFO [http-apr-8080-exec-103] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 13:00:24.415 INFO [http-apr-8080-exec-106] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/patelr'
+27-Mar-2019 13:00:24.570 INFO [http-apr-8080-exec-106] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 13:01:21.268 INFO [http-apr-8080-exec-104] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/patelr'
+27-Mar-2019 13:01:21.405 INFO [http-apr-8080-exec-104] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 13:10:10.155 INFO [http-apr-8080-exec-4] org.apache.catalina.core.ApplicationContext.log HTMLManager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+27-Mar-2019 13:10:10.155 INFO [http-apr-8080-exec-4] org.apache.catalina.core.ApplicationContext.log HTMLManager: init: Global resources are available
+27-Mar-2019 13:10:17.849 INFO [http-apr-8080-exec-7] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 13:13:07.658 INFO [http-apr-8080-exec-9] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/gg'
+27-Mar-2019 13:13:07.997 INFO [http-apr-8080-exec-9] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 13:14:57.209 INFO [http-apr-8080-exec-15] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/gg'
+27-Mar-2019 13:14:57.378 INFO [http-apr-8080-exec-15] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 13:16:21.947 INFO [http-apr-8080-exec-27] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/gg'
+27-Mar-2019 13:16:22.114 INFO [http-apr-8080-exec-27] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 13:19:09.076 INFO [http-apr-8080-exec-34] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/gg'
+27-Mar-2019 13:19:09.262 INFO [http-apr-8080-exec-34] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 13:21:09.670 INFO [http-apr-8080-exec-41] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/gg'
+27-Mar-2019 13:21:09.812 INFO [http-apr-8080-exec-41] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 13:23:38.525 INFO [http-apr-8080-exec-48] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/gg'
+27-Mar-2019 13:23:38.806 INFO [http-apr-8080-exec-48] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 13:25:24.440 INFO [http-apr-8080-exec-6] org.apache.catalina.core.ApplicationContext.log HTMLManager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+27-Mar-2019 13:25:24.440 INFO [http-apr-8080-exec-6] org.apache.catalina.core.ApplicationContext.log HTMLManager: init: Global resources are available
+27-Mar-2019 13:25:24.457 INFO [http-apr-8080-exec-6] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 13:25:26.629 INFO [http-apr-8080-exec-7] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/gg'
+27-Mar-2019 13:25:26.827 INFO [http-apr-8080-exec-7] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 13:26:38.811 INFO [http-apr-8080-exec-11] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/gg'
+27-Mar-2019 13:26:39.136 INFO [http-apr-8080-exec-11] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 13:28:47.348 INFO [http-apr-8080-exec-21] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/gg'
+27-Mar-2019 13:28:47.530 INFO [http-apr-8080-exec-21] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 13:37:35.875 INFO [http-apr-8080-exec-31] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/gg'
+27-Mar-2019 13:37:36.044 INFO [http-apr-8080-exec-31] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 13:40:41.254 INFO [http-apr-8080-exec-37] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/gg'
+27-Mar-2019 13:40:41.448 INFO [http-apr-8080-exec-37] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 13:41:37.905 INFO [http-apr-8080-exec-47] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/gg'
+27-Mar-2019 13:41:38.090 INFO [http-apr-8080-exec-47] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 13:42:32.450 INFO [http-apr-8080-exec-49] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/gg'
+27-Mar-2019 13:42:32.636 INFO [http-apr-8080-exec-49] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 13:43:24.558 INFO [http-apr-8080-exec-58] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/gg'
+27-Mar-2019 13:43:24.782 INFO [http-apr-8080-exec-58] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 13:45:21.721 INFO [http-apr-8080-exec-64] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/gg'
+27-Mar-2019 13:45:21.918 INFO [http-apr-8080-exec-64] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 13:47:45.096 INFO [http-apr-8080-exec-74] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/gg'
+27-Mar-2019 13:47:45.287 INFO [http-apr-8080-exec-74] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 13:48:02.436 INFO [http-apr-8080-exec-80] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/examples'
+27-Mar-2019 13:48:02.860 INFO [http-apr-8080-exec-80] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 13:48:07.142 INFO [http-apr-8080-exec-78] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/gg'
+27-Mar-2019 13:48:07.338 INFO [http-apr-8080-exec-78] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 13:57:25.687 INFO [http-apr-8080-exec-5] org.apache.catalina.core.ApplicationContext.log HTMLManager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+27-Mar-2019 13:57:25.687 INFO [http-apr-8080-exec-5] org.apache.catalina.core.ApplicationContext.log HTMLManager: init: Global resources are available
+27-Mar-2019 13:57:25.698 INFO [http-apr-8080-exec-5] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 13:57:29.229 INFO [http-apr-8080-exec-6] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/gg'
+27-Mar-2019 13:57:29.435 INFO [http-apr-8080-exec-6] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 14:00:49.388 INFO [http-apr-8080-exec-13] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/gg'
+27-Mar-2019 14:00:49.732 INFO [http-apr-8080-exec-13] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 14:03:10.747 INFO [http-apr-8080-exec-19] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/gg'
+27-Mar-2019 14:03:10.939 INFO [http-apr-8080-exec-19] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 14:07:58.339 INFO [http-apr-8080-exec-31] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/gg'
+27-Mar-2019 14:07:58.542 INFO [http-apr-8080-exec-31] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 14:08:44.472 INFO [http-apr-8080-exec-30] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/gg'
+27-Mar-2019 14:08:44.745 INFO [http-apr-8080-exec-30] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 14:09:55.800 INFO [http-apr-8080-exec-38] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/gg'
+27-Mar-2019 14:09:56.056 INFO [http-apr-8080-exec-38] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 14:11:18.573 INFO [http-apr-8080-exec-52] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/gg'
+27-Mar-2019 14:11:18.744 INFO [http-apr-8080-exec-52] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 14:13:09.961 INFO [http-apr-8080-exec-61] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/gg'
+27-Mar-2019 14:13:10.152 INFO [http-apr-8080-exec-61] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 14:14:33.368 INFO [http-apr-8080-exec-68] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/gg'
+27-Mar-2019 14:14:33.533 INFO [http-apr-8080-exec-68] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 14:15:09.394 INFO [http-apr-8080-exec-72] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/gg'
+27-Mar-2019 14:15:09.575 INFO [http-apr-8080-exec-72] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 14:17:50.390 INFO [http-apr-8080-exec-80] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/gg'
+27-Mar-2019 14:17:50.558 INFO [http-apr-8080-exec-80] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 14:18:38.939 INFO [http-apr-8080-exec-85] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/gg'
+27-Mar-2019 14:18:39.214 INFO [http-apr-8080-exec-85] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 14:19:36.626 INFO [http-apr-8080-exec-93] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/gg'
+27-Mar-2019 14:19:36.819 INFO [http-apr-8080-exec-93] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 14:20:47.736 INFO [http-apr-8080-exec-100] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/gg'
+27-Mar-2019 14:20:47.921 INFO [http-apr-8080-exec-100] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 14:21:54.435 INFO [http-apr-8080-exec-107] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/gg'
+27-Mar-2019 14:21:54.629 INFO [http-apr-8080-exec-107] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 14:23:00.910 INFO [http-apr-8080-exec-105] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/gg'
+27-Mar-2019 14:23:01.152 INFO [http-apr-8080-exec-105] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 14:26:06.590 INFO [http-apr-8080-exec-120] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/gg'
+27-Mar-2019 14:26:06.742 INFO [http-apr-8080-exec-120] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 14:28:19.834 INFO [http-apr-8080-exec-128] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/gg'
+27-Mar-2019 14:28:19.993 INFO [http-apr-8080-exec-128] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 14:30:44.164 INFO [http-apr-8080-exec-138] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/gg'
+27-Mar-2019 14:30:44.324 INFO [http-apr-8080-exec-138] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 14:36:30.720 INFO [http-apr-8080-exec-149] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/gg'
+27-Mar-2019 14:36:30.861 INFO [http-apr-8080-exec-149] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 14:42:43.772 INFO [http-apr-8080-exec-152] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/gg'
+27-Mar-2019 14:42:43.941 INFO [http-apr-8080-exec-152] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 14:45:21.410 INFO [http-apr-8080-exec-163] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/gg'
+27-Mar-2019 14:45:21.592 INFO [http-apr-8080-exec-163] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 14:47:13.192 INFO [http-apr-8080-exec-170] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/gg'
+27-Mar-2019 14:47:13.356 INFO [http-apr-8080-exec-170] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 14:49:03.065 INFO [http-apr-8080-exec-178] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/gg'
+27-Mar-2019 14:49:03.266 INFO [http-apr-8080-exec-178] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 14:50:10.363 INFO [http-apr-8080-exec-180] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/gg'
+27-Mar-2019 14:50:10.532 INFO [http-apr-8080-exec-180] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 14:51:58.424 INFO [http-apr-8080-exec-189] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/gg'
+27-Mar-2019 14:51:58.572 INFO [http-apr-8080-exec-189] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+27-Mar-2019 14:54:30.640 INFO [http-apr-8080-exec-195] org.apache.catalina.core.ApplicationContext.log HTMLManager: restart: Reloading web application '/gg'
+27-Mar-2019 14:54:30.786 INFO [http-apr-8080-exec-195] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'

@@ -1,0 +1,754 @@
+package webd4201.PatelR;
+
+
+
+import java.security.NoSuchAlgorithmException;
+import java.sql.*;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Date;
+import java.util.Vector;
+
+
+
+
+
+/***
+ * StudentDA this class used to connect student with the database
+ * @author Rahulkumar Patel
+ * @version 1.0 (2019/1/20)
+ * @since 1.0
+ * which have a different methods
+ */
+
+public class StudentDA {
+	 
+	    /**
+	     * userInsert take as a string and set as a private and write query to insert data in users table.
+	     */
+	    private static final String  userInsert = "INSERT INTO users (id, password,firstname,lastname, emailaddress,enable,enroldate,lastaccess,type) values(?,?,?,?,?,?,?,?,?)"; 
+	    
+	    /**
+	     *studenInsert take as a string and set as a private and write query to insert data in students table. 
+	     */
+	    private static final String  studenInsert = "INSERT INTO students (id,programCode,programDescription,year) values(?,?,?,?)";        
+	    
+	    /**
+	     * userUpdate take as a string and set as a private and write query to update data in update table. 
+	     */
+	    private static final String  userUpdate = "UPDATE users SET password=?,firstname=?,lastname=?,emailaddress=?,enable=? ,enroldate=?,lastaccess=?,type=? WHERE id= ? ";        
+	    
+	    /**
+	     * studentUpdate take as a string and set as a private and write query to update data in students table. 
+	     */
+	    private static final String  studentUpdate = "UPDATE students SET programCode=?,programDescription=?,year=? WHERE id= ? ";        
+	    
+	    /**
+	     * userDelete take as a string and set as a private and write query to delete data in users table. 
+	     */
+	    private static final String  userDelete = "DELETE FROM users WHERE id= ? ";  
+	    
+	    /**
+	     * studentDelete take as a string and set as a private and write query to delete data in students table. 
+	     */
+	    private static final String  studentDelete = "DELETE FROM students WHERE id= ? "; 
+	    
+	    /**
+	     * select take as a string and set as a private and write query to select data from the users table.
+	     */
+	    private static final String select = "SELECT users.Id, Password, FirstName, LastName, EmailAddress, LastAccess,"
+                   +" EnrolDate, enable, Type, ProgramCode, ProgramDescription, Year"
+                   +" FROM users, students WHERE users.id = students.id AND users.Id = ?";
+	    
+	    /**
+	     * select_ID_PASSWORD select all details of student from student and ser tables where both have same id
+	     */
+	    private static final String select_ID_PASSWORD= "SELECT users.Id, Password, FirstName, LastName, EmailAddress, LastAccess,"
+                   +" EnrolDate, enable, Type, ProgramCode, ProgramDescription, year"
+                +" FROM users, students WHERE users.id = students.id AND users.id = ? And users.password = ?";
+	    
+	    /**
+	     * passwordupdate update the password in user table where id is match with input id
+	     */
+	    private static final String passwordupdate =  "UPDATE users SET password=?  WHERE id= ? "; 
+	    
+	    
+	    /**
+	     * select_PASSWORD select id and password from user table for login
+	     */
+	    private static final String select_PASSWORD= "SELECT users.Id, Password"
+             +" FROM users WHERE users.id = ? And users.password = ?";
+
+	    /**
+	     * select_course select required data from the three different tables 
+	     */
+	    private static final String select_course = "SELECT students.id,marks.coursecode,result,coursetitle,gpaweighting,year"
+	    		       +" FROM marks INNER JOIN courses ON marks.coursecode = courses.coursecode "
+	    		       + "INNER JOIN students ON marks.id = students.id WHERE marks.id= ?";
+	    
+	    /**
+	     * userUpdateA take as a string and set as a private and write query to update data in update table. 
+	     */
+	    private static final String  userUpdateA = "UPDATE users SET firstname=?,lastname=?,emailaddress=?,enable=? ,enroldate=?,lastaccess=?,type=? WHERE id= ? ";        
+
+	    		                                    
+	    /**
+	     * studentUpdateA take as a string and set as a private and write query to update data in students table. 
+	     */
+	    private static final String  studentUpdateA = "UPDATE students SET programCode=?,programDescription=?,year=? WHERE id= ? "; 
+	   
+	// declare variables for the database connection,statement and student object
+		
+	    /**
+		 * object of Connection class
+		 */
+		static Connection aConnection;  
+		
+		/**
+		 * object of Statement class
+		 */
+		static Statement aStatement;
+		
+		/**
+		 * object of Student class.
+		 */
+		static Student aStudent;
+		
+		/**
+		 * object of Mark class.
+		 */
+		static Vector<Mark> marks = new Vector<Mark>();
+		
+	// declare static variables for all Students instance attribute values
+		/**
+		 * static variable id.
+		 */
+		static long id;
+		
+		/**
+		 * static variable password
+		 */
+		static String password;
+		
+		/**
+		 * static variable firstname as a string
+		 */
+		static String firstname;
+		
+		/**
+		 * static variable lastname as a string
+		 */
+		static String lastname;
+		
+		/**
+		 * static variable emailAddress as a string
+		 */
+		static String emailAddress;
+		
+		/**
+		 * static variable enable as a string
+		 */
+		static boolean enable;
+		
+		/**
+		 * static variable type as a character
+		 */
+		static char type;
+		
+		/**
+		 * static variable lastAccess as a date
+		 */
+		static Date lastAccess;
+		
+		/**
+		 * static variable enrolDate as a date
+		 */
+		static Date enrolDate;
+		
+		/**
+		 *  static variable programCode as a String
+		 */
+		static String programCode;
+	   
+		/**
+	     * static variable programDescription as a String
+	     */
+	    static String programDescription;
+	   
+	    /**
+	     * static variable year as a integer
+	     */
+	    static int year ;
+	    
+	     /**
+		 *  static variable courseCode as a String
+		 */
+		static String coursecode;
+	   
+		/**
+	     * static variable courseTitle as a String
+	     */
+		static String coursetitle;
+	    static String courseName;
+	    
+	    /**
+	     * static variable marks as a integer
+	     */
+	    static int result ;
+	    
+	    /**
+	     * static variable gpaweighting as a float
+	     */
+	    static float gpaweighting ;
+	    
+	    /**
+	     * static variable inserted as a boolean
+	     */
+	    static boolean inserted = false;
+	    
+	    
+	    /**
+	     * static variable aMark object of Mark class
+	     */
+	    static Vector<Mark> aMark;
+	 //constant date formate   
+	    @SuppressWarnings("unused")
+	    /**
+	     * SQL_DF object of date format to set a specific date format
+	     */
+		private static final SimpleDateFormat SQL_DF = new SimpleDateFormat("yyyy-MM-dd");   
+	  
+	  //  private static final String CREATE_STMT = " INSERT INTO students (id, programCode, programDescription, year)" + " values (?, ?, ?, ?)";
+	 
+	   
+	 // establish the database connection
+		/**
+		 * @param c
+		 * call createStatement() from the connection.
+		 */
+		public static void initialize(Connection c)
+		{
+	            try {
+	                aConnection=c;
+	                aStatement=aConnection.createStatement();
+	            }
+	            catch (SQLException e)
+	            { System.out.println(e);	}
+		}
+
+		// close the database connection
+		/**
+		 * @throws SQLException
+		 * call close() from the Statement.
+		 */
+		public static void terminate()
+		{
+	            try
+	            { 	// close the statement
+	                aStatement.close();
+	            }
+	            catch (SQLException e)
+	            { System.out.println(e);	}
+		}
+		/**
+		 * create this metod is used to create a student in a database
+		 * @param aStudent
+		 * @return
+		 * @throws SQLException
+		 * call all the attributes of the Student class.and insert data in user and student table.
+		 */
+		public static boolean create(Student aStudent) throws NotFoundException, InvalidIdException,  InvalidNameException,NotFoundException
+		,InvalidUserDataException,DuplicateException
+		{
+			
+			boolean result = false; 
+			id = aStudent.getId();
+		    System.out.println(id);
+			
+				try
+	 			{  // execute the SQL update statement
+					   //insertion success flag
+					// Retrieve the Student attribute values
+					aConnection.setAutoCommit(false);
+					inserted = UserDA.create(aStudent);
+					if(inserted)
+					{
+						id = aStudent.getId();
+						programCode = aStudent.getProgramCode();
+						programDescription= aStudent.getProgramDescription();
+						year = aStudent.getYear();	
+			
+					PreparedStatement qs = aConnection.prepareStatement(studenInsert);
+					qs.setLong(1, id);
+					qs.setString(2, programCode);
+					qs.setString(3, programDescription);
+					qs.setInt(4, year);
+					result = qs.execute();
+					}
+						
+				}
+				catch (SQLException ee)
+					{ System.out.println(ee);	}
+
+			return result;
+			
+		}
+		
+		/**
+		 * ret
+		 * @param key
+		 * @return
+		 * @throws NotFoundException
+		 * @throws InvalidPasswordException 
+		 * @throws InvalidNameException 
+		 * check id is stored in a tables or not.
+		 */
+		public static Student retrieve(long key)throws NotFoundException,InvalidIdException, InvalidNameException, InvalidUserDataException
+		{
+			//retrieve Student sand Boat data
+			aStudent = null;
+			// define the SQL query statement using the id as a key
+			//String query = "SELECT id, password, first_name,last_name, email_address,enrol_date,last_access, enable,type, programCode,programDescription, year "
+				//	 +"FROM users,students" +" WHERE id = '" + key +"'" ;
+			//execute the SQL query
+			try
+			{
+				//
+                // next method sets cursor & returns true if there is data
+				PreparedStatement select_user = aConnection.prepareStatement(select);
+				select_user.setLong(1,key);
+				
+				ResultSet rs = select_user.executeQuery();
+				
+                boolean gotIt = rs.next();
+                if (gotIt)
+                {	// extract the data
+                	id = rs.getLong("id");
+        			password = rs.getString("password");
+        			firstname = rs.getString("firstname");
+        			lastname = rs.getString("lastname");
+        			emailAddress = rs.getString("emailAddress");
+        			lastAccess = rs.getDate("lastAccess");
+        			enrolDate = rs.getDate("enrolDate");
+        			enable = rs.getBoolean("enable");
+        			type = rs.getString("type").charAt(0);
+        			programCode = rs.getString("programCode");
+        			programDescription = rs.getString("programDescription");
+        			year = rs.getInt("year");
+		
+        			aStudent = new Student(id,password,firstname,lastname,emailAddress,lastAccess,enrolDate,enable,type,programCode,programDescription,year);
+        			System.out.println("*******************");
+        			aStudent.displayToConsole();
+                }else //nothing
+                  	// nothing was retrieved
+                {throw (new NotFoundException("Problem retrieving Student record, with student id " + key +" does not exist in the system."));}
+                rs.close();
+
+			}
+			catch (SQLException e)
+			{ System.out.println(e);}
+	                
+			return aStudent;
+		}
+		
+		//update method
+		/**
+		 * @param aStudent
+		 * @return
+		 * @throws NotFoundException
+		 * @throws InvalidPasswordException 
+		 * @throws InvalidNameException 
+		 * call all the attributes of the Student class.and update data in user and student table.
+		 */
+		public static boolean update(Student aStudent) throws NotFoundException, InvalidIdException,  InvalidNameException,NotFoundException
+		,InvalidUserDataException,DuplicateException
+		{	
+			boolean records = false;  //records updated in method
+			
+			// Retrieve the Student attribute values
+			id = aStudent.getId();
+			password= aStudent.getPassword();
+			firstname = aStudent.getFirstName();
+			lastname = aStudent.getLastName();
+			emailAddress = aStudent.getEmailAddress();
+    		lastAccess = aStudent.getLastAccess();
+			enrolDate = aStudent.getEnroleDate();
+			enable = aStudent.isEnable();
+	     	type = aStudent.getType();
+		    programCode = aStudent.getProgramCode();
+			programDescription= aStudent.getProgramDescription();
+			year = aStudent.getYear();	
+
+			
+//			// define the SQL query statement using the phone number key
+//			String sqlUpdate = "Update users,students " +
+//					" SET password = '" + password +"', " +
+//					" first_name   = '" + firstname +"' " +
+//                    " last_name   = '" + lastname +"' " +
+//                    " email_address   = '" + emailAddress +"' " +
+//                    " last_access   = '" + lastAccess +"' " +
+//                    " enrol_date   = '" + enrolDate +"' " +
+//                    " type   = '" + type +"' " +
+//                    " enable   = '" + enable +"' " +
+//                    " programCode   = '" + programCode +"' " +
+//                    " programDescription   = '" + programDescription +"' " +
+//                    " year   = '" + year +"' " +
+//                    " WHERE id = '" + id + "'";
+			// see if this customer exists in the database
+			// NotFoundException is thrown by find method
+			try
+			{
+				retrieve(id);  //determine if there is a Customer recrod to be updated
+                // if found, execute the SQL update statement
+				PreparedStatement update_user = aConnection.prepareStatement(userUpdate);
+				PreparedStatement update_student = aConnection.prepareStatement(studentUpdate);
+				java.sql.Date sqllastAccess = new java.sql.Date(lastAccess.getTime());
+				java.sql.Date sqlenrolDate = new java.sql.Date(enrolDate.getTime());
+				update_user.setString(1,password);
+				update_user.setString(2, firstname);
+				update_user.setString(3, lastname);
+				update_user.setString(4, emailAddress);
+				update_user.setDate(6, sqlenrolDate);
+				update_user.setDate(7,sqllastAccess);
+				update_user.setBoolean(5, enable);
+				update_user.setString(8, String.valueOf(type));
+				update_user.setFloat(9, id);
+				
+				update_student.setString(1, programCode);
+				update_student.setString(2, programDescription);
+				update_student.setInt(3, year);
+				update_student.setLong(4, id);
+				
+				records = update_user.execute();
+				records = update_student.execute();
+	               
+	                   // records = aStatement.executeUpdate(sqlUpdate);
+			}catch(NotFoundException e)
+			{
+				throw new NotFoundException("Student with id " + id 
+						+ " cannot be updated, does not exist in the system.");
+			}catch (SQLException e)
+			{ System.out.println(e);}
+			return records;
+		}
+		
+		/**
+		 * @param aStudent
+		 * @return
+		 * @throws NotFoundException
+		 * @throws InvalidIdException
+		 * @throws InvalidNameException
+		 * @throws NotFoundException
+		 * @throws InvalidUserDataException
+		 * @throws DuplicateException
+		 * call all the attributes of the Student class.and Delete data in user and student table.
+		 */
+		public static boolean delete(Student aStudent) throws NotFoundException, InvalidIdException,  InvalidNameException,NotFoundException
+		,InvalidUserDataException,DuplicateException
+		{	
+			boolean records = false;
+			// retrieve the phone no (key)
+			id = aStudent.getId();
+			// create the SQL delete statement
+			/*String sqlDelete = "DELETE FROM users,students " +
+	                                    "WHERE id = '" + id +"'";*/
+
+			// see if this customer already exists in the database
+			try
+			{
+				retrieve(id);  //used to determine if record exists for the passed Customer
+	    		// if found, execute the SQL update statement
+	    		//records = aStatement.executeUpdate(sqlDelete);
+				PreparedStatement delete_user = aConnection.prepareStatement(userDelete);
+				PreparedStatement delete_student = aConnection.prepareStatement(studentDelete);
+				
+				delete_user.setLong(1,id);
+				
+				
+				delete_student.setLong(1,id);
+				
+				
+				records = delete_user.execute();
+				records = delete_student.execute();
+				
+			}catch(NotFoundException e)
+			{
+				throw new NotFoundException("Student with id " + id 
+						+ " cannot be deleted, does not exist.");
+			}catch (SQLException e)
+				{ System.out.println(e);	}
+			return records;
+		}
+		
+		/**
+		 * @param key
+		 * @param pasword
+		 * @return aStudent
+		 * @throws NotFoundException
+		 * @throws InvalidIdException
+		 * @throws InvalidNameException
+		 * @throws NotFoundException
+		 * @throws InvalidUserDataException
+		 * @throws DuplicateException
+		 * @throws SQLException
+		 * for update password
+		 */
+		public static Student authenticate(long key,String pasword)throws NotFoundException, InvalidIdException,  InvalidNameException,NotFoundException
+		,InvalidUserDataException,DuplicateException, SQLException
+		{ 
+			aStudent =  null;
+			PreparedStatement select_id_password = aConnection.prepareStatement(select_ID_PASSWORD);
+			PreparedStatement select_courses = aConnection.prepareStatement(select_course);
+			
+			select_id_password.setLong(1, key);
+			select_id_password.setString(2, pasword);
+			
+			select_courses.setLong(1, key);
+			
+			ResultSet rs = select_id_password.executeQuery();
+			
+			
+			boolean gotIt = rs.next();
+			if (gotIt)
+			{
+            	id = rs.getLong("id");
+            	password = rs.getString("password");
+    			firstname = rs.getString("firstname");
+    			lastname = rs.getString("lastname");
+    			emailAddress = rs.getString("emailAddress");
+    			lastAccess = rs.getDate("lastAccess");
+    			enrolDate = rs.getDate("enrolDate");
+    			enable = rs.getBoolean("enable");
+    			type = rs.getString("type").charAt(0);
+    			programCode = rs.getString("programCode");
+    			programDescription = rs.getString("programDescription");
+    			year = rs.getInt("year");
+    			
+    			ResultSet rs1 = select_courses.executeQuery();	
+    			boolean done = rs1.next();
+    			if (done){
+    			 while(rs1.next()){
+    				
+    				 	coursecode = rs1.getString("coursecode");
+    	            	coursetitle = rs1.getString("coursetitle");
+    	            	result = rs1.getInt("result");
+    	            	gpaweighting = rs1.getFloat("gpaweighting");
+    	            	
+    				 Mark aMark = new Mark(coursecode,coursetitle,result,gpaweighting);
+    				 
+    				// System.out.println(aMark);
+    				 //System.out.println(marks); 
+    				 
+    				 marks.add(0,aMark);
+    				
+    				
+    				 aStudent = new Student(id,password,firstname,lastname,emailAddress,lastAccess,enrolDate,enable,type,programCode,programDescription,year,marks);
+    				 System.out.println("fffffffffffffffffffffffffffffffffffffff");
+    				 System.out.println(year);
+    				 System.out.println(aStudent.getYear());
+    			 }
+    						}}else//nothing
+			{throw (new NotFoundException("Problem authenticating Student record, with student id " + key +" does not exist in the system with your password"));}
+            rs.close();
+             
+		return aStudent;
+			
+		}
+	//*************************************************************************************************************/	
+//		public static Student result(long key) throws SQLException, NotFoundException
+//		{
+//			aStudent = null;
+//			PreparedStatement select_courses = aConnection.prepareStatement(select_course);
+//			//PreparedStatement select_courses_1 = aConnection.prepareStatement(select_course_1);
+//			select_courses.setLong(1, key);
+//			
+//			ResultSet rs = select_courses.executeQuery();
+//			
+//			boolean gotIt = rs.next();
+//            while(rs.next()){
+//			if (gotIt)
+//			{
+//            	id = rs.getLong("id");
+//            	coursecode = rs.getString("coursecode");
+//            	coursetitle = rs.getString("coursetitle");
+//            	result = rs.getInt("result");
+//            	gpaweighting = rs.getFloat("gpaweighting");	
+//    			year = rs.getInt("year");
+//	
+//    			aMark = new Mark(coursecode,coursetitle,result,gpaweighting);
+//			}else//nothing
+//			{throw (new NotFoundException("Problem authenticating Student record, with student id " + key +" does not exist in the system with your password"));}
+//            }rs.close();
+//			return aStudent;
+//		}
+		
+		/**
+		 * @return ****************************************************************************************************************************/
+//		public static Vector<Mark> result1(long key) throws SQLException, NotFoundException
+//		{
+//			Vector<Mark> list = new Vector<Mark>();
+//			aMark = null;
+//			PreparedStatement select_courses = aConnection.prepareStatement(select_course);
+//			//PreparedStatement select_courses_1 = aConnection.prepareStatement(select_course_1);
+//			select_courses.setLong(1, key);
+//			
+//			ResultSet rs = select_courses.executeQuery();
+//			Mark m = null;
+//			while(rs.next())
+//			{
+//			boolean gotIt = rs.next();
+//            m = new Mark(coursecode,courseName,result,gpaweighting);
+//			if (gotIt)
+//			{
+//            	id = rs.getLong("id");
+//            	m.setCourseCode(rs.getString("coursecode"));
+//            	m.setCourseName(rs.getString("coursetitle"));
+//            	m.setResult(rs.getInt("result"));
+//            	m.setGpaWeighting(rs.getFloat("gpaweighting"));	
+//    			year = rs.getInt("year");
+//	            list.add(m);
+//    		//	aMark = new Mark(coursecode,courseName,result,gpaweighting);
+//			   
+//			
+//			}else rs.close();//nothing
+//			{throw (new NotFoundException("Problem authenticating Student record, with student id " + key +" does not exist in the system with your password"));}
+//            }
+//			return list;
+//		}
+		/**
+		 * @param aStudent
+		 * @return
+		 * @throws NotFoundException
+		 * @throws InvalidIdException
+		 * @throws InvalidNameException
+		 * @throws NotFoundException
+		 * @throws InvalidUserDataException
+		 * @throws DuplicateException
+		 */
+		public static boolean updatePassword(String pasword) throws NotFoundException, InvalidIdException,  InvalidNameException,NotFoundException
+		,InvalidUserDataException,DuplicateException
+		{	
+			boolean records = false;  //records updated in method
+			
+			// Retrieve the Student attribute values
+			id = aStudent.getId();
+			password= aStudent.getPassword();
+		
+//			
+			try
+			{
+				retrieve(id);  //determine if there is a Customer recrod to be updated
+                // if found, execute the SQL update statement
+				PreparedStatement update_password = aConnection.prepareStatement(passwordupdate);
+				//PreparedStatement update_student = aConnection.prepareStatement(studentUpdate);
+				//java.sql.Date sqllastAccess = new java.sql.Date(lastAccess.getTime());
+				//java.sql.Date sqlenrolDate = new java.sql.Date(enrolDate.getTime());
+				update_password.setLong(1,id);
+				update_password.setString(2,password);
+				
+				
+				
+				
+				records = update_password.execute();
+				
+	               
+	                   // records = aStatement.executeUpdate(sqlUpdate);
+			}catch(NotFoundException e)
+			{
+				throw new NotFoundException("Student with id " + id 
+						+ " cannot be updated, does not exist in the system.");
+			}catch (SQLException e)
+			{ System.out.println(e);}
+			return records;
+		}
+		
+		public static Student passwordAuthenticate(long key,String pasword)throws NotFoundException, InvalidIdException,  InvalidNameException,NotFoundException
+		,InvalidUserDataException,DuplicateException, SQLException
+		{ 
+			aStudent =  null;
+			PreparedStatement select_password = aConnection.prepareStatement(select_PASSWORD);
+			select_password.setLong(1, key);
+			select_password.setString(2, pasword);;
+			
+			ResultSet rs = select_password.executeQuery();
+			
+			boolean gotIt = rs.next();
+			if (gotIt)
+			{
+            	id = rs.getLong("id");
+            	password = rs.getString("password");
+    			
+	
+    			aStudent = new Student(id,password,firstname,lastname,emailAddress,lastAccess,enrolDate,enable,type,programCode,programDescription,year);
+			}else//nothing
+			{throw (new NotFoundException("Problem authenticating Student record, with student id " + key +" does not exist in the system with your password"));}
+            rs.close();
+         
+		return aStudent;
+			
+		}
+		
+		
+		//update method
+				/**
+				 * @param aStudent
+				 * @return
+				 * @throws NotFoundException
+				 * @throws InvalidPasswordException 
+				 * @throws InvalidNameException 
+				 * call all the attributes of the Student class.and update data in user and student table.
+				 */
+				public static boolean updateT(Student aStudent) throws NotFoundException, InvalidIdException,  InvalidNameException,NotFoundException
+				,InvalidUserDataException,DuplicateException
+				{	
+					boolean records = false;  //records updated in method
+					
+					// Retrieve the Student attribute values
+					id = aStudent.getId();
+					password= aStudent.getPassword();
+					firstname = aStudent.getFirstName();
+					lastname = aStudent.getLastName();
+					emailAddress = aStudent.getEmailAddress();
+		    		lastAccess = aStudent.getLastAccess();
+					enrolDate = aStudent.getEnroleDate();
+					enable = aStudent.isEnable();
+			     	type = aStudent.getType();
+				    programCode = aStudent.getProgramCode();
+					programDescription= aStudent.getProgramDescription();
+					year = aStudent.getYear();	
+					try
+					{
+						retrieve(id);  //determine if there is a Customer recrod to be updated
+		                // if found, execute the SQL update statement
+						PreparedStatement update_user = aConnection.prepareStatement(userUpdateA);
+						PreparedStatement update_student = aConnection.prepareStatement(studentUpdateA);
+						java.sql.Date sqllastAccess = new java.sql.Date(lastAccess.getTime());
+						java.sql.Date sqlenrolDate = new java.sql.Date(enrolDate.getTime());
+						update_user.setString(1, firstname);
+						update_user.setString(2, lastname);
+						update_user.setString(3, emailAddress);
+						update_user.setBoolean(4, enable);
+						update_user.setDate(5, sqlenrolDate);
+						update_user.setDate(6,sqllastAccess);
+						update_user.setString(7, String.valueOf(type));
+						update_user.setFloat(8, id);
+						
+						update_student.setString(1, programCode);
+						update_student.setString(2, programDescription);
+						update_student.setInt(3, year);
+						update_student.setLong(4, id);
+						
+						records = update_user.execute();
+						records = update_student.execute();
+			               
+			                   // records = aStatement.executeUpdate(sqlUpdate);
+					}catch(NotFoundException e)
+					{
+						throw new NotFoundException("Student with id " + id 
+								+ " cannot be updated, does not exist in the system.");
+					}catch (SQLException e)
+					{ System.out.println(e);}
+					return records;
+				}
+}
